@@ -1,0 +1,28 @@
+{
+  "id": "docs/products/export-stock",
+  "title": "Export Stock",
+  "description": "Send Odoo inventory levels to Shopify",
+  "source": "@site/docs/docs/products/export-stock.md",
+  "sourceDirName": "docs/products",
+  "slug": "/docs/products/export-stock",
+  "permalink": "/docs/docs/products/export-stock",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "title": "Export Stock",
+    "description": "Send Odoo inventory levels to Shopify"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Map Products",
+    "permalink": "/docs/docs/products/map-products"
+  },
+  "next": {
+    "title": "Import Stock",
+    "permalink": "/docs/docs/products/import-stock"
+  }
+}

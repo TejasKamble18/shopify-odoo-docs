@@ -1,0 +1,28 @@
+{
+  "id": "docs/products/import-stock",
+  "title": "Import Stock",
+  "description": "Import inventory levels from Shopify",
+  "source": "@site/docs/docs/products/import-stock.md",
+  "sourceDirName": "docs/products",
+  "slug": "/docs/products/import-stock",
+  "permalink": "/docs/docs/products/import-stock",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5,
+    "title": "Import Stock",
+    "description": "Import inventory levels from Shopify"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Export Stock",
+    "permalink": "/docs/docs/products/export-stock"
+  },
+  "next": {
+    "title": "Update / Export Products",
+    "permalink": "/docs/docs/products/update-products"
+  }
+}

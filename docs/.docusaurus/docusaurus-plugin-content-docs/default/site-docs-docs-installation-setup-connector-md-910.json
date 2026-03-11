@@ -1,0 +1,28 @@
+{
+  "id": "docs/installation/setup-connector",
+  "title": "Setup Connector",
+  "description": "Initial setup of the Shopify-Odoo Connector",
+  "source": "@site/docs/docs/installation/setup-connector.md",
+  "sourceDirName": "docs/installation",
+  "slug": "/docs/installation/setup-connector",
+  "permalink": "/docs/docs/installation/setup-connector",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "Setup Connector",
+    "description": "Initial setup of the Shopify-Odoo Connector"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Installation",
+    "permalink": "/docs/docs/installation/getting-started"
+  },
+  "next": {
+    "title": "Generate API Keys",
+    "permalink": "/docs/docs/installation/generate-api-keys"
+  }
+}

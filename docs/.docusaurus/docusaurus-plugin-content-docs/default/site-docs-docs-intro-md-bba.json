@@ -1,0 +1,22 @@
+{
+  "id": "docs/intro",
+  "title": "Welcome to Shopify–Odoo Connector Documentation",
+  "description": "Complete documentation for seamless Shopify–Odoo integration.",
+  "source": "@site/docs/docs/intro.md",
+  "sourceDirName": "docs",
+  "slug": "/docs/intro",
+  "permalink": "/docs/docs/intro",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Installation",
+    "permalink": "/docs/docs/installation/getting-started"
+  }
+}

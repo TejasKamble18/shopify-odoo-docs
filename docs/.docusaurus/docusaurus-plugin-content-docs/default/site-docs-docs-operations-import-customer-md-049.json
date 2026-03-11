@@ -1,0 +1,28 @@
+{
+  "id": "docs/operations/import-customer",
+  "title": "Import Customer",
+  "description": "Import customers from Shopify to Odoo",
+  "source": "@site/docs/docs/operations/import-customer.md",
+  "sourceDirName": "docs/operations",
+  "slug": "/docs/operations/import-customer",
+  "permalink": "/docs/docs/operations/import-customer",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Import Customer",
+    "description": "Import customers from Shopify to Odoo"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Payment Gateway",
+    "permalink": "/docs/docs/configuration/payment-gateway"
+  },
+  "next": {
+    "title": "Import Location",
+    "permalink": "/docs/docs/operations/import-location"
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "docs/intro",
+          "docs": [
+            {
+              "id": "docs/configuration/auto-workflow",
+              "path": "/docs/docs/configuration/auto-workflow",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/configuration/order-configuration",
+              "path": "/docs/docs/configuration/order-configuration",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/configuration/payment-gateway",
+              "path": "/docs/docs/configuration/payment-gateway",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/configuration/product-configuration",
+              "path": "/docs/docs/configuration/product-configuration",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/configuration/stock-information",
+              "path": "/docs/docs/configuration/stock-information",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/configuration/tax-configuration",
+              "path": "/docs/docs/configuration/tax-configuration",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/configuration/webhook-configuration",
+              "path": "/docs/docs/configuration/webhook-configuration",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/installation/configure-instance",
+              "path": "/docs/docs/installation/configure-instance",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/installation/generate-api-keys",
+              "path": "/docs/docs/installation/generate-api-keys",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/installation/getting-started",
+              "path": "/docs/docs/installation/getting-started",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/installation/setup-connector",
+              "path": "/docs/docs/installation/setup-connector",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/intro",
+              "path": "/docs/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/operations/auto-scheduler",
+              "path": "/docs/docs/operations/auto-scheduler",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/operations/import-customer",
+              "path": "/docs/docs/operations/import-customer",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/operations/import-location",
+              "path": "/docs/docs/operations/import-location",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/operations/queue-management",
+              "path": "/docs/docs/operations/queue-management",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/orders/cancel-order-shopify",
+              "path": "/docs/docs/orders/cancel-order-shopify",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/orders/export-shipment",
+              "path": "/docs/docs/orders/export-shipment",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/orders/grant-access-shipment",
+              "path": "/docs/docs/orders/grant-access-shipment",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/orders/import-cancel-order",
+              "path": "/docs/docs/orders/import-cancel-order",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/orders/import-returns",
+              "path": "/docs/docs/orders/import-returns",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/orders/import-shipped-orders",
+              "path": "/docs/docs/orders/import-shipped-orders",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/orders/import-specific-order",
+              "path": "/docs/docs/orders/import-specific-order",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/orders/import-unshipped-orders",
+              "path": "/docs/docs/orders/import-unshipped-orders",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/orders/refund",
+              "path": "/docs/docs/orders/refund",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/products/export-stock",
+              "path": "/docs/docs/products/export-stock",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/products/import-products",
+              "path": "/docs/docs/products/import-products",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/products/import-specific-products",
+              "path": "/docs/docs/products/import-specific-products",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/products/import-stock",
+              "path": "/docs/docs/products/import-stock",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/products/map-products",
+              "path": "/docs/docs/products/map-products",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/products/update-products",
+              "path": "/docs/docs/products/update-products",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/reference/faq",
+              "path": "/docs/docs/reference/faq",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/reference/release-notes",
+              "path": "/docs/docs/reference/release-notes",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/reference/troubleshooting",
+              "path": "/docs/docs/reference/troubleshooting",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/reports/net-profit-report",
+              "path": "/docs/docs/reports/net-profit-report",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/reports/sales-report",
+              "path": "/docs/docs/reports/sales-report",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/reports/shopify-payouts",
+              "path": "/docs/docs/reports/shopify-payouts",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "docs/reports/webhooks-configuration",
+              "path": "/docs/docs/reports/webhooks-configuration",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/docs/intro",
+                "label": "docs/intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

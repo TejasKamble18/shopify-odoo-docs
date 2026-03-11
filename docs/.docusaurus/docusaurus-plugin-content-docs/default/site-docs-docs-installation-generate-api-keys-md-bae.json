@@ -1,0 +1,28 @@
+{
+  "id": "docs/installation/generate-api-keys",
+  "title": "Generate API Keys",
+  "description": "Create Shopify API credentials",
+  "source": "@site/docs/docs/installation/generate-api-keys.md",
+  "sourceDirName": "docs/installation",
+  "slug": "/docs/installation/generate-api-keys",
+  "permalink": "/docs/docs/installation/generate-api-keys",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "title": "Generate API Keys",
+    "description": "Create Shopify API credentials"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Setup Connector",
+    "permalink": "/docs/docs/installation/setup-connector"
+  },
+  "next": {
+    "title": "Configure Instance",
+    "permalink": "/docs/docs/installation/configure-instance"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "docs/reports/sales-report",
+  "title": "Sales Report & Log Book",
+  "description": "View sales reports and logs",
+  "source": "@site/docs/docs/reports/sales-report.md",
+  "sourceDirName": "docs/reports",
+  "slug": "/docs/reports/sales-report",
+  "permalink": "/docs/docs/reports/sales-report",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "Sales Report & Log Book",
+    "description": "View sales reports and logs"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Webhooks Configuration",
+    "permalink": "/docs/docs/reports/webhooks-configuration"
+  },
+  "next": {
+    "title": "Shopify Payouts",
+    "permalink": "/docs/docs/reports/shopify-payouts"
+  }
+}

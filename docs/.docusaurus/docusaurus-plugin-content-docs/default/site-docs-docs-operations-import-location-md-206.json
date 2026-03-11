@@ -1,0 +1,28 @@
+{
+  "id": "docs/operations/import-location",
+  "title": "Import Location",
+  "description": "Import Shopify locations to Odoo",
+  "source": "@site/docs/docs/operations/import-location.md",
+  "sourceDirName": "docs/operations",
+  "slug": "/docs/operations/import-location",
+  "permalink": "/docs/docs/operations/import-location",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "Import Location",
+    "description": "Import Shopify locations to Odoo"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Import Customer",
+    "permalink": "/docs/docs/operations/import-customer"
+  },
+  "next": {
+    "title": "Auto Scheduler Configuration",
+    "permalink": "/docs/docs/operations/auto-scheduler"
+  }
+}
