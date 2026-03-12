@@ -1,0 +1,27 @@
+{
+  "id": "reports/shopify-payouts",
+  "title": "Shopify Payouts",
+  "description": "Import Shopify Payments payout data into Odoo for reconciliation.",
+  "source": "@site/docs/reports/shopify-payouts.md",
+  "sourceDirName": "reports",
+  "slug": "/reports/shopify-payouts",
+  "permalink": "/docs/reports/shopify-payouts",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "shopify-payouts",
+    "title": "Shopify Payouts",
+    "sidebar_label": "Shopify Payouts"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Sales Report",
+    "permalink": "/docs/reports/sales-report"
+  },
+  "next": {
+    "title": "Net Profit Report",
+    "permalink": "/docs/reports/net-profit-report"
+  }
+}

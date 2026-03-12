@@ -1,0 +1,27 @@
+{
+  "id": "reference/troubleshooting",
+  "title": "Troubleshooting",
+  "description": "Common Issues",
+  "source": "@site/docs/reference/troubleshooting.md",
+  "sourceDirName": "reference",
+  "slug": "/reference/troubleshooting",
+  "permalink": "/docs/reference/troubleshooting",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "troubleshooting",
+    "title": "Troubleshooting",
+    "sidebar_label": "Troubleshooting"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Release Notes",
+    "permalink": "/docs/reference/release-notes"
+  },
+  "next": {
+    "title": "FAQ",
+    "permalink": "/docs/reference/faq"
+  }
+}

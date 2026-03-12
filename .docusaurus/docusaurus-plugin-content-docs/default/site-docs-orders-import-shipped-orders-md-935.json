@@ -1,0 +1,27 @@
+{
+  "id": "orders/import-shipped-orders",
+  "title": "Import Shipped Orders",
+  "description": "Import already-fulfilled orders from Shopify — useful for historical imports or catch-up syncs.",
+  "source": "@site/docs/orders/import-shipped-orders.md",
+  "sourceDirName": "orders",
+  "slug": "/orders/import-shipped-orders",
+  "permalink": "/docs/orders/import-shipped-orders",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "import-shipped-orders",
+    "title": "Import Shipped Orders",
+    "sidebar_label": "Import Shipped Orders"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Import Unshipped Orders",
+    "permalink": "/docs/orders/import-unshipped-orders"
+  },
+  "next": {
+    "title": "Import Specific Order",
+    "permalink": "/docs/orders/import-specific-order"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "installation/setup-connector",
+  "title": "Setup Connector",
+  "description": "After installing the module, configure the Shopify store connection in Odoo.",
+  "source": "@site/docs/installation/setup-connector.md",
+  "sourceDirName": "installation",
+  "slug": "/installation/setup-connector",
+  "permalink": "/docs/installation/setup-connector",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "setup-connector",
+    "title": "Setup Connector",
+    "sidebar_label": "Setup Connector"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Getting Started",
+    "permalink": "/docs/installation/getting-started"
+  },
+  "next": {
+    "title": "Generate API Keys",
+    "permalink": "/docs/installation/generate-api-keys"
+  }
+}

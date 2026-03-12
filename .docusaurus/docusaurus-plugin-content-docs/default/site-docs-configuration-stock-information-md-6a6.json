@@ -1,0 +1,27 @@
+{
+  "id": "configuration/stock-information",
+  "title": "Stock Information",
+  "description": "Configure how inventory levels sync between Shopify locations and Odoo warehouses.",
+  "source": "@site/docs/configuration/stock-information.md",
+  "sourceDirName": "configuration",
+  "slug": "/configuration/stock-information",
+  "permalink": "/docs/configuration/stock-information",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "stock-information",
+    "title": "Stock Information",
+    "sidebar_label": "Stock Information"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Tax Configuration",
+    "permalink": "/docs/configuration/tax-configuration"
+  },
+  "next": {
+    "title": "Auto Workflow",
+    "permalink": "/docs/configuration/auto-workflow"
+  }
+}

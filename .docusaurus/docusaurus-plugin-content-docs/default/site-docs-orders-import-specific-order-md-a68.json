@@ -1,0 +1,27 @@
+{
+  "id": "orders/import-specific-order",
+  "title": "Import Specific Order",
+  "description": "Import a single order by its Shopify Order ID.",
+  "source": "@site/docs/orders/import-specific-order.md",
+  "sourceDirName": "orders",
+  "slug": "/orders/import-specific-order",
+  "permalink": "/docs/orders/import-specific-order",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "import-specific-order",
+    "title": "Import Specific Order",
+    "sidebar_label": "Import Specific Order"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Import Shipped Orders",
+    "permalink": "/docs/orders/import-shipped-orders"
+  },
+  "next": {
+    "title": "Import Cancel Orders",
+    "permalink": "/docs/orders/import-cancel-order"
+  }
+}

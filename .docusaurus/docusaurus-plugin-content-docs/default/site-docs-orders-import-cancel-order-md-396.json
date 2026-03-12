@@ -1,0 +1,27 @@
+{
+  "id": "orders/import-cancel-order",
+  "title": "Import Cancel Orders",
+  "description": "Sync cancelled orders from Shopify to Odoo.",
+  "source": "@site/docs/orders/import-cancel-order.md",
+  "sourceDirName": "orders",
+  "slug": "/orders/import-cancel-order",
+  "permalink": "/docs/orders/import-cancel-order",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "import-cancel-order",
+    "title": "Import Cancel Orders",
+    "sidebar_label": "Import Cancel Orders"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Import Specific Order",
+    "permalink": "/docs/orders/import-specific-order"
+  },
+  "next": {
+    "title": "Grant Access Shipment",
+    "permalink": "/docs/orders/grant-access-shipment"
+  }
+}

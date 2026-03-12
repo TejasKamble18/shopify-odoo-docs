@@ -1,0 +1,27 @@
+{
+  "id": "products/import-products",
+  "title": "Import Products",
+  "description": "Import all products from your Shopify store into Odoo.",
+  "source": "@site/docs/products/import-products.md",
+  "sourceDirName": "products",
+  "slug": "/products/import-products",
+  "permalink": "/docs/products/import-products",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "import-products",
+    "title": "Import Products",
+    "sidebar_label": "Import Products"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Queue Management",
+    "permalink": "/docs/operations/queue-management"
+  },
+  "next": {
+    "title": "Import Specific Products",
+    "permalink": "/docs/products/import-specific-products"
+  }
+}

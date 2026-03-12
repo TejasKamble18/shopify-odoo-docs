@@ -1,0 +1,27 @@
+{
+  "id": "orders/grant-access-shipment",
+  "title": "Grant Fulfillment Access",
+  "description": "Grant shipping access to allow the connector to export tracking numbers back to Shopify.",
+  "source": "@site/docs/orders/grant-access-shipment.md",
+  "sourceDirName": "orders",
+  "slug": "/orders/grant-access-shipment",
+  "permalink": "/docs/orders/grant-access-shipment",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "grant-access-shipment",
+    "title": "Grant Fulfillment Access",
+    "sidebar_label": "Grant Access Shipment"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Import Cancel Orders",
+    "permalink": "/docs/orders/import-cancel-order"
+  },
+  "next": {
+    "title": "Export Shipment",
+    "permalink": "/docs/orders/export-shipment"
+  }
+}

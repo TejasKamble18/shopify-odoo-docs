@@ -1,0 +1,27 @@
+{
+  "id": "configuration/auto-workflow",
+  "title": "Auto Workflow",
+  "description": "Auto Workflow automates the full order processing pipeline so you don't have to manually confirm, invoice, and ship each order.",
+  "source": "@site/docs/configuration/auto-workflow.md",
+  "sourceDirName": "configuration",
+  "slug": "/configuration/auto-workflow",
+  "permalink": "/docs/configuration/auto-workflow",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "auto-workflow",
+    "title": "Auto Workflow",
+    "sidebar_label": "Auto Workflow"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Stock Information",
+    "permalink": "/docs/configuration/stock-information"
+  },
+  "next": {
+    "title": "Payment Gateway",
+    "permalink": "/docs/configuration/payment-gateway"
+  }
+}

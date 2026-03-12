@@ -1,0 +1,566 @@
+{
+  "pluginId": "default",
+  "version": "current",
+  "label": "Next",
+  "banner": null,
+  "badge": false,
+  "noIndex": false,
+  "className": "docs-version-current",
+  "isLast": true,
+  "docsSidebars": {
+    "tutorialSidebar": [
+      {
+        "type": "link",
+        "label": "👋 Welcome",
+        "href": "/docs/intro",
+        "docId": "intro",
+        "unlisted": false
+      },
+      {
+        "type": "category",
+        "label": "⚙️ Installation",
+        "collapsed": false,
+        "items": [
+          {
+            "type": "link",
+            "label": "Getting Started",
+            "href": "/docs/installation/getting-started",
+            "docId": "installation/getting-started",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Setup Connector",
+            "href": "/docs/installation/setup-connector",
+            "docId": "installation/setup-connector",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Generate API Keys",
+            "href": "/docs/installation/generate-api-keys",
+            "docId": "installation/generate-api-keys",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Configure Instance",
+            "href": "/docs/installation/configure-instance",
+            "docId": "installation/configure-instance",
+            "unlisted": false
+          }
+        ],
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "🔧 Configuration",
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Webhook Configuration",
+            "href": "/docs/configuration/webhook-configuration",
+            "docId": "configuration/webhook-configuration",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Product Configuration",
+            "href": "/docs/configuration/product-configuration",
+            "docId": "configuration/product-configuration",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Order Configuration",
+            "href": "/docs/configuration/order-configuration",
+            "docId": "configuration/order-configuration",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Tax Configuration",
+            "href": "/docs/configuration/tax-configuration",
+            "docId": "configuration/tax-configuration",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Stock Information",
+            "href": "/docs/configuration/stock-information",
+            "docId": "configuration/stock-information",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Auto Workflow",
+            "href": "/docs/configuration/auto-workflow",
+            "docId": "configuration/auto-workflow",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Payment Gateway",
+            "href": "/docs/configuration/payment-gateway",
+            "docId": "configuration/payment-gateway",
+            "unlisted": false
+          }
+        ],
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "🔄 Operations",
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Import Customers",
+            "href": "/docs/operations/import-customer",
+            "docId": "operations/import-customer",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Import Locations",
+            "href": "/docs/operations/import-location",
+            "docId": "operations/import-location",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Auto Scheduler",
+            "href": "/docs/operations/auto-scheduler",
+            "docId": "operations/auto-scheduler",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Queue Management",
+            "href": "/docs/operations/queue-management",
+            "docId": "operations/queue-management",
+            "unlisted": false
+          }
+        ],
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "📦 Products",
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Import Products",
+            "href": "/docs/products/import-products",
+            "docId": "products/import-products",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Import Specific Products",
+            "href": "/docs/products/import-specific-products",
+            "docId": "products/import-specific-products",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Map Products",
+            "href": "/docs/products/map-products",
+            "docId": "products/map-products",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Export Stock",
+            "href": "/docs/products/export-stock",
+            "docId": "products/export-stock",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Import Stock",
+            "href": "/docs/products/import-stock",
+            "docId": "products/import-stock",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Update Products",
+            "href": "/docs/products/update-products",
+            "docId": "products/update-products",
+            "unlisted": false
+          }
+        ],
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "🛒 Orders",
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Import Unshipped Orders",
+            "href": "/docs/orders/import-unshipped-orders",
+            "docId": "orders/import-unshipped-orders",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Import Shipped Orders",
+            "href": "/docs/orders/import-shipped-orders",
+            "docId": "orders/import-shipped-orders",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Import Specific Order",
+            "href": "/docs/orders/import-specific-order",
+            "docId": "orders/import-specific-order",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Import Cancel Orders",
+            "href": "/docs/orders/import-cancel-order",
+            "docId": "orders/import-cancel-order",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Grant Access Shipment",
+            "href": "/docs/orders/grant-access-shipment",
+            "docId": "orders/grant-access-shipment",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Export Shipment",
+            "href": "/docs/orders/export-shipment",
+            "docId": "orders/export-shipment",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Cancel Order in Shopify",
+            "href": "/docs/orders/cancel-order-shopify",
+            "docId": "orders/cancel-order-shopify",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Refunds",
+            "href": "/docs/orders/refund",
+            "docId": "orders/refund",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Import Returns",
+            "href": "/docs/orders/import-returns",
+            "docId": "orders/import-returns",
+            "unlisted": false
+          }
+        ],
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "📊 Reports",
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Webhook Activity",
+            "href": "/docs/reports/webhooks-configuration",
+            "docId": "reports/webhooks-configuration",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Sales Report",
+            "href": "/docs/reports/sales-report",
+            "docId": "reports/sales-report",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Shopify Payouts",
+            "href": "/docs/reports/shopify-payouts",
+            "docId": "reports/shopify-payouts",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Net Profit Report",
+            "href": "/docs/reports/net-profit-report",
+            "docId": "reports/net-profit-report",
+            "unlisted": false
+          }
+        ],
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "📋 Reference",
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "Release Notes",
+            "href": "/docs/reference/release-notes",
+            "docId": "reference/release-notes",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Troubleshooting",
+            "href": "/docs/reference/troubleshooting",
+            "docId": "reference/troubleshooting",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "FAQ",
+            "href": "/docs/reference/faq",
+            "docId": "reference/faq",
+            "unlisted": false
+          }
+        ],
+        "collapsible": true
+      }
+    ]
+  },
+  "docs": {
+    "configuration/auto-workflow": {
+      "id": "configuration/auto-workflow",
+      "title": "Auto Workflow",
+      "description": "Auto Workflow automates the full order processing pipeline so you don't have to manually confirm, invoice, and ship each order.",
+      "sidebar": "tutorialSidebar"
+    },
+    "configuration/order-configuration": {
+      "id": "configuration/order-configuration",
+      "title": "Order Configuration",
+      "description": "Configure how Shopify orders are imported and processed in Odoo.",
+      "sidebar": "tutorialSidebar"
+    },
+    "configuration/payment-gateway": {
+      "id": "configuration/payment-gateway",
+      "title": "Payment Gateway",
+      "description": "Map Shopify payment gateways to Odoo accounting journals for correct financial recording.",
+      "sidebar": "tutorialSidebar"
+    },
+    "configuration/product-configuration": {
+      "id": "configuration/product-configuration",
+      "title": "Product Configuration",
+      "description": "Configure how products sync between Shopify and Odoo.",
+      "sidebar": "tutorialSidebar"
+    },
+    "configuration/stock-information": {
+      "id": "configuration/stock-information",
+      "title": "Stock Information",
+      "description": "Configure how inventory levels sync between Shopify locations and Odoo warehouses.",
+      "sidebar": "tutorialSidebar"
+    },
+    "configuration/tax-configuration": {
+      "id": "configuration/tax-configuration",
+      "title": "Tax Configuration",
+      "description": "Map Shopify taxes to Odoo fiscal positions and tax rules.",
+      "sidebar": "tutorialSidebar"
+    },
+    "configuration/webhook-configuration": {
+      "id": "configuration/webhook-configuration",
+      "title": "Webhook Configuration",
+      "description": "Webhooks enable real-time sync between Shopify and Odoo. When an event occurs in Shopify (new order, updated product, etc.), Shopify instantly notifies Odoo.",
+      "sidebar": "tutorialSidebar"
+    },
+    "installation/configure-instance": {
+      "id": "installation/configure-instance",
+      "title": "Configure Instance",
+      "description": "After entering your Shopify credentials, configure the sync settings for your Odoo instance.",
+      "sidebar": "tutorialSidebar"
+    },
+    "installation/generate-api-keys": {
+      "id": "installation/generate-api-keys",
+      "title": "Generate API Keys",
+      "description": "To connect Odoo with Shopify, you need to create a Custom App in Shopify and obtain API credentials.",
+      "sidebar": "tutorialSidebar"
+    },
+    "installation/getting-started": {
+      "id": "installation/getting-started",
+      "title": "Getting Started",
+      "description": "This guide walks you through the complete installation of the SDLC Corp Shopify–Odoo Connector.",
+      "sidebar": "tutorialSidebar"
+    },
+    "installation/setup-connector": {
+      "id": "installation/setup-connector",
+      "title": "Setup Connector",
+      "description": "After installing the module, configure the Shopify store connection in Odoo.",
+      "sidebar": "tutorialSidebar"
+    },
+    "intro": {
+      "id": "intro",
+      "title": "Welcome to SDLC Corp Docs",
+      "description": "Welcome to the official documentation for the SDLC Corp Shopify–Odoo Connector — enterprise-grade real-time integration between Shopify and Odoo ERP.",
+      "sidebar": "tutorialSidebar"
+    },
+    "operations/auto-scheduler": {
+      "id": "operations/auto-scheduler",
+      "title": "Auto Scheduler",
+      "description": "The connector includes pre-configured scheduled actions for regular background sync.",
+      "sidebar": "tutorialSidebar"
+    },
+    "operations/import-customer": {
+      "id": "operations/import-customer",
+      "title": "Import Customers",
+      "description": "Sync your Shopify customers into Odoo contacts.",
+      "sidebar": "tutorialSidebar"
+    },
+    "operations/import-location": {
+      "id": "operations/import-location",
+      "title": "Import Locations",
+      "description": "Import your Shopify fulfilment locations into Odoo for warehouse mapping.",
+      "sidebar": "tutorialSidebar"
+    },
+    "operations/queue-management": {
+      "id": "operations/queue-management",
+      "title": "Queue Management",
+      "description": "The connector uses an async queue system for reliable, retryable processing of all sync operations.",
+      "sidebar": "tutorialSidebar"
+    },
+    "orders/cancel-order-shopify": {
+      "id": "orders/cancel-order-shopify",
+      "title": "Cancel Order in Shopify",
+      "description": "Cancel a Shopify order from within Odoo.",
+      "sidebar": "tutorialSidebar"
+    },
+    "orders/export-shipment": {
+      "id": "orders/export-shipment",
+      "title": "Export Shipment Tracking",
+      "description": "Push tracking numbers from Odoo delivery orders back to Shopify to mark orders as fulfilled.",
+      "sidebar": "tutorialSidebar"
+    },
+    "orders/grant-access-shipment": {
+      "id": "orders/grant-access-shipment",
+      "title": "Grant Fulfillment Access",
+      "description": "Grant shipping access to allow the connector to export tracking numbers back to Shopify.",
+      "sidebar": "tutorialSidebar"
+    },
+    "orders/import-cancel-order": {
+      "id": "orders/import-cancel-order",
+      "title": "Import Cancel Orders",
+      "description": "Sync cancelled orders from Shopify to Odoo.",
+      "sidebar": "tutorialSidebar"
+    },
+    "orders/import-returns": {
+      "id": "orders/import-returns",
+      "title": "Import Returns",
+      "description": "Import product returns from Shopify into Odoo as return transfers.",
+      "sidebar": "tutorialSidebar"
+    },
+    "orders/import-shipped-orders": {
+      "id": "orders/import-shipped-orders",
+      "title": "Import Shipped Orders",
+      "description": "Import already-fulfilled orders from Shopify — useful for historical imports or catch-up syncs.",
+      "sidebar": "tutorialSidebar"
+    },
+    "orders/import-specific-order": {
+      "id": "orders/import-specific-order",
+      "title": "Import Specific Order",
+      "description": "Import a single order by its Shopify Order ID.",
+      "sidebar": "tutorialSidebar"
+    },
+    "orders/import-unshipped-orders": {
+      "id": "orders/import-unshipped-orders",
+      "title": "Import Unshipped Orders",
+      "description": "Import all open, unpaid or unshipped orders from Shopify.",
+      "sidebar": "tutorialSidebar"
+    },
+    "orders/refund": {
+      "id": "orders/refund",
+      "title": "Process Refunds",
+      "description": "Process full or partial refunds for Shopify orders.",
+      "sidebar": "tutorialSidebar"
+    },
+    "products/export-stock": {
+      "id": "products/export-stock",
+      "title": "Export Stock to Shopify",
+      "description": "Push current Odoo inventory levels to Shopify.",
+      "sidebar": "tutorialSidebar"
+    },
+    "products/import-products": {
+      "id": "products/import-products",
+      "title": "Import Products",
+      "description": "Import all products from your Shopify store into Odoo.",
+      "sidebar": "tutorialSidebar"
+    },
+    "products/import-specific-products": {
+      "id": "products/import-specific-products",
+      "title": "Import Specific Products",
+      "description": "Import one or more specific products by their Shopify Product ID.",
+      "sidebar": "tutorialSidebar"
+    },
+    "products/import-stock": {
+      "id": "products/import-stock",
+      "title": "Import Stock from Shopify",
+      "description": "Pull inventory levels from Shopify into Odoo.",
+      "sidebar": "tutorialSidebar"
+    },
+    "products/map-products": {
+      "id": "products/map-products",
+      "title": "Map Products",
+      "description": "Link existing Odoo products to their Shopify equivalents without re-importing.",
+      "sidebar": "tutorialSidebar"
+    },
+    "products/update-products": {
+      "id": "products/update-products",
+      "title": "Update Products",
+      "description": "Push product changes from Odoo back to Shopify.",
+      "sidebar": "tutorialSidebar"
+    },
+    "reference/faq": {
+      "id": "reference/faq",
+      "title": "FAQ",
+      "description": "Does the connector work with Shopify Plus?",
+      "sidebar": "tutorialSidebar"
+    },
+    "reference/release-notes": {
+      "id": "reference/release-notes",
+      "title": "Release Notes",
+      "description": "v18.0 — Current Release",
+      "sidebar": "tutorialSidebar"
+    },
+    "reference/troubleshooting": {
+      "id": "reference/troubleshooting",
+      "title": "Troubleshooting",
+      "description": "Common Issues",
+      "sidebar": "tutorialSidebar"
+    },
+    "reports/net-profit-report": {
+      "id": "reports/net-profit-report",
+      "title": "Net Profit Report",
+      "description": "Analyze profitability of your Shopify sales directly in Odoo.",
+      "sidebar": "tutorialSidebar"
+    },
+    "reports/sales-report": {
+      "id": "reports/sales-report",
+      "title": "Sales Report",
+      "description": "View consolidated sales data from your Shopify stores directly in Odoo.",
+      "sidebar": "tutorialSidebar"
+    },
+    "reports/shopify-payouts": {
+      "id": "reports/shopify-payouts",
+      "title": "Shopify Payouts",
+      "description": "Import Shopify Payments payout data into Odoo for reconciliation.",
+      "sidebar": "tutorialSidebar"
+    },
+    "reports/webhooks-configuration": {
+      "id": "reports/webhooks-configuration",
+      "title": "Webhook Logs & Activity",
+      "description": "Monitor incoming webhook events from Shopify in real time.",
+      "sidebar": "tutorialSidebar"
+    }
+  }
+}

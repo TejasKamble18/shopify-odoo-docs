@@ -1,0 +1,27 @@
+{
+  "id": "installation/generate-api-keys",
+  "title": "Generate API Keys",
+  "description": "To connect Odoo with Shopify, you need to create a Custom App in Shopify and obtain API credentials.",
+  "source": "@site/docs/installation/generate-api-keys.md",
+  "sourceDirName": "installation",
+  "slug": "/installation/generate-api-keys",
+  "permalink": "/docs/installation/generate-api-keys",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "generate-api-keys",
+    "title": "Generate API Keys",
+    "sidebar_label": "Generate API Keys"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Setup Connector",
+    "permalink": "/docs/installation/setup-connector"
+  },
+  "next": {
+    "title": "Configure Instance",
+    "permalink": "/docs/installation/configure-instance"
+  }
+}

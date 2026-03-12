@@ -1,0 +1,27 @@
+{
+  "id": "operations/auto-scheduler",
+  "title": "Auto Scheduler",
+  "description": "The connector includes pre-configured scheduled actions for regular background sync.",
+  "source": "@site/docs/operations/auto-scheduler.md",
+  "sourceDirName": "operations",
+  "slug": "/operations/auto-scheduler",
+  "permalink": "/docs/operations/auto-scheduler",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "auto-scheduler",
+    "title": "Auto Scheduler",
+    "sidebar_label": "Auto Scheduler"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Import Locations",
+    "permalink": "/docs/operations/import-location"
+  },
+  "next": {
+    "title": "Queue Management",
+    "permalink": "/docs/operations/queue-management"
+  }
+}

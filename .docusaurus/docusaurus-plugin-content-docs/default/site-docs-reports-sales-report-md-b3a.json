@@ -1,0 +1,27 @@
+{
+  "id": "reports/sales-report",
+  "title": "Sales Report",
+  "description": "View consolidated sales data from your Shopify stores directly in Odoo.",
+  "source": "@site/docs/reports/sales-report.md",
+  "sourceDirName": "reports",
+  "slug": "/reports/sales-report",
+  "permalink": "/docs/reports/sales-report",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "sales-report",
+    "title": "Sales Report",
+    "sidebar_label": "Sales Report"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Webhook Activity",
+    "permalink": "/docs/reports/webhooks-configuration"
+  },
+  "next": {
+    "title": "Shopify Payouts",
+    "permalink": "/docs/reports/shopify-payouts"
+  }
+}

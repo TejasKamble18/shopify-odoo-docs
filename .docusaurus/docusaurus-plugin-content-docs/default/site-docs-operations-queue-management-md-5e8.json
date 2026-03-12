@@ -1,0 +1,27 @@
+{
+  "id": "operations/queue-management",
+  "title": "Queue Management",
+  "description": "The connector uses an async queue system for reliable, retryable processing of all sync operations.",
+  "source": "@site/docs/operations/queue-management.md",
+  "sourceDirName": "operations",
+  "slug": "/operations/queue-management",
+  "permalink": "/docs/operations/queue-management",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "queue-management",
+    "title": "Queue Management",
+    "sidebar_label": "Queue Management"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Auto Scheduler",
+    "permalink": "/docs/operations/auto-scheduler"
+  },
+  "next": {
+    "title": "Import Products",
+    "permalink": "/docs/products/import-products"
+  }
+}

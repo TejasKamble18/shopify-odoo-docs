@@ -1,0 +1,27 @@
+{
+  "id": "reports/net-profit-report",
+  "title": "Net Profit Report",
+  "description": "Analyze profitability of your Shopify sales directly in Odoo.",
+  "source": "@site/docs/reports/net-profit-report.md",
+  "sourceDirName": "reports",
+  "slug": "/reports/net-profit-report",
+  "permalink": "/docs/reports/net-profit-report",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "net-profit-report",
+    "title": "Net Profit Report",
+    "sidebar_label": "Net Profit Report"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Shopify Payouts",
+    "permalink": "/docs/reports/shopify-payouts"
+  },
+  "next": {
+    "title": "Release Notes",
+    "permalink": "/docs/reference/release-notes"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "configuration/order-configuration",
+  "title": "Order Configuration",
+  "description": "Configure how Shopify orders are imported and processed in Odoo.",
+  "source": "@site/docs/configuration/order-configuration.md",
+  "sourceDirName": "configuration",
+  "slug": "/configuration/order-configuration",
+  "permalink": "/docs/configuration/order-configuration",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "order-configuration",
+    "title": "Order Configuration",
+    "sidebar_label": "Order Configuration"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Product Configuration",
+    "permalink": "/docs/configuration/product-configuration"
+  },
+  "next": {
+    "title": "Tax Configuration",
+    "permalink": "/docs/configuration/tax-configuration"
+  }
+}

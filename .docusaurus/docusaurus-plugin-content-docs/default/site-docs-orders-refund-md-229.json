@@ -1,0 +1,27 @@
+{
+  "id": "orders/refund",
+  "title": "Process Refunds",
+  "description": "Process full or partial refunds for Shopify orders.",
+  "source": "@site/docs/orders/refund.md",
+  "sourceDirName": "orders",
+  "slug": "/orders/refund",
+  "permalink": "/docs/orders/refund",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "refund",
+    "title": "Process Refunds",
+    "sidebar_label": "Refunds"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Cancel Order in Shopify",
+    "permalink": "/docs/orders/cancel-order-shopify"
+  },
+  "next": {
+    "title": "Import Returns",
+    "permalink": "/docs/orders/import-returns"
+  }
+}
