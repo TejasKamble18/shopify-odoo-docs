@@ -46,7 +46,6 @@ const config = {
       respectPrefersColorScheme: false,
     },
     navbar: {
-      title: 'SDLC Corp',
       logo: {
         alt: 'SDLC Corp',
         src: 'img/logo.svg',
