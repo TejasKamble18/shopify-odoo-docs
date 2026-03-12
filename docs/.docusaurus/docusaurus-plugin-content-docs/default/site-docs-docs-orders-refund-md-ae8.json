@@ -1,0 +1,28 @@
+{
+  "id": "docs/orders/refund",
+  "title": "Refund",
+  "description": "Process refunds in Shopify",
+  "source": "@site/docs/docs/orders/refund.md",
+  "sourceDirName": "docs/orders",
+  "slug": "/docs/orders/refund",
+  "permalink": "/docs/docs/orders/refund",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "sidebar_position": 8,
+    "title": "Refund",
+    "description": "Process refunds in Shopify"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Cancel Order in Shopify",
+    "permalink": "/docs/docs/orders/cancel-order-shopify"
+  },
+  "next": {
+    "title": "Import Returns & Refunds",
+    "permalink": "/docs/docs/orders/import-returns"
+  }
+}

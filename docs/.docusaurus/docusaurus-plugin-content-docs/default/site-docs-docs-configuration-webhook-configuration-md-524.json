@@ -1,0 +1,28 @@
+{
+  "id": "docs/configuration/webhook-configuration",
+  "title": "Webhook Configuration",
+  "description": "Set up webhooks for real-time sync",
+  "source": "@site/docs/docs/configuration/webhook-configuration.md",
+  "sourceDirName": "docs/configuration",
+  "slug": "/docs/configuration/webhook-configuration",
+  "permalink": "/docs/docs/configuration/webhook-configuration",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Webhook Configuration",
+    "description": "Set up webhooks for real-time sync"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Configure Instance",
+    "permalink": "/docs/docs/installation/configure-instance"
+  },
+  "next": {
+    "title": "Product Configuration",
+    "permalink": "/docs/docs/configuration/product-configuration"
+  }
+}

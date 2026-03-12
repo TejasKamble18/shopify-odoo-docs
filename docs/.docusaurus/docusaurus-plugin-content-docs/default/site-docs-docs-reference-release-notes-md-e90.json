@@ -1,0 +1,28 @@
+{
+  "id": "docs/reference/release-notes",
+  "title": "Release Notes",
+  "description": "Version history and updates",
+  "source": "@site/docs/docs/reference/release-notes.md",
+  "sourceDirName": "docs/reference",
+  "slug": "/docs/reference/release-notes",
+  "permalink": "/docs/docs/reference/release-notes",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Release Notes",
+    "description": "Version history and updates"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Net Profit Report",
+    "permalink": "/docs/docs/reports/net-profit-report"
+  },
+  "next": {
+    "title": "Troubleshooting",
+    "permalink": "/docs/docs/reference/troubleshooting"
+  }
+}

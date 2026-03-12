@@ -1,0 +1,28 @@
+{
+  "id": "docs/operations/queue-management",
+  "title": "Queue Management",
+  "description": "Monitor synchronization queue",
+  "source": "@site/docs/docs/operations/queue-management.md",
+  "sourceDirName": "docs/operations",
+  "slug": "/docs/operations/queue-management",
+  "permalink": "/docs/docs/operations/queue-management",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "title": "Queue Management",
+    "description": "Monitor synchronization queue"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Auto Scheduler Configuration",
+    "permalink": "/docs/docs/operations/auto-scheduler"
+  },
+  "next": {
+    "title": "Import Products",
+    "permalink": "/docs/docs/products/import-products"
+  }
+}

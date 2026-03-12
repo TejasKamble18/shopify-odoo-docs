@@ -1,0 +1,217 @@
+{
+  "/__docusaurus/debug-97d": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugbdc-912"
+    }
+  },
+  "/__docusaurus/debug/config-88d": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugbdc-912"
+    }
+  },
+  "/__docusaurus/debug/content-ba2": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugbdc-912"
+    },
+    "allContent": "allContent---docusaurus-debug-content-246-9aa"
+  },
+  "/__docusaurus/debug/globalData-0d4": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugbdc-912"
+    }
+  },
+  "/__docusaurus/debug/metadata-c0f": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugbdc-912"
+    }
+  },
+  "/__docusaurus/debug/registry-99a": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugbdc-912"
+    }
+  },
+  "/__docusaurus/debug/routes-cb1": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugbdc-912"
+    }
+  },
+  "/docs-09f": {
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__context": {
+      "plugin": "plugin---docs-89-b-0d7"
+    }
+  },
+  "/docs-22e": {
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "version": "version---docs-935-398"
+  },
+  "/docs-b34": {
+    "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/docs/docs/configuration/auto-workflow-0ef": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-configuration-auto-workflowa-6-f-8a4"
+  },
+  "/docs/docs/configuration/order-configuration-fc3": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-configuration-order-configuration-648-224"
+  },
+  "/docs/docs/configuration/payment-gateway-087": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-configuration-payment-gateway-39-f-318"
+  },
+  "/docs/docs/configuration/product-configuration-fcd": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-configuration-product-configurationedf-278"
+  },
+  "/docs/docs/configuration/stock-information-470": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-configuration-stock-information-177-6bb"
+  },
+  "/docs/docs/configuration/tax-configuration-619": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-configuration-tax-configuration-4-c-9-221"
+  },
+  "/docs/docs/configuration/webhook-configuration-f12": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-configuration-webhook-configuration-524-f51"
+  },
+  "/docs/docs/installation/configure-instance-897": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-installation-configure-instance-7-b-1-050"
+  },
+  "/docs/docs/installation/generate-api-keys-761": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-installation-generate-api-keysbae-ae2"
+  },
+  "/docs/docs/installation/getting-started-f4c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-installation-getting-started-10-f-0ec"
+  },
+  "/docs/docs/installation/setup-connector-444": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-installation-setup-connector-910-f8e"
+  },
+  "/docs/docs/intro-c2b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-introbba-f18"
+  },
+  "/docs/docs/operations/auto-scheduler-39a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-operations-auto-scheduler-99-e-957"
+  },
+  "/docs/docs/operations/import-customer-bfe": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-operations-import-customer-049-2f9"
+  },
+  "/docs/docs/operations/import-location-da6": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-operations-import-location-206-8cd"
+  },
+  "/docs/docs/operations/queue-management-088": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-operations-queue-managementbd-2-8dd"
+  },
+  "/docs/docs/orders/cancel-order-shopify-370": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-orders-cancel-order-shopify-94-f-d9e"
+  },
+  "/docs/docs/orders/export-shipment-61d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-orders-export-shipment-000-eb1"
+  },
+  "/docs/docs/orders/grant-access-shipment-f45": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-orders-grant-access-shipmentd-30-1f9"
+  },
+  "/docs/docs/orders/import-cancel-order-d32": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-orders-import-cancel-orderfbf-0a0"
+  },
+  "/docs/docs/orders/import-returns-3c6": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-orders-import-returnsf-85-fcc"
+  },
+  "/docs/docs/orders/import-shipped-orders-019": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-orders-import-shipped-ordersfb-5-88c"
+  },
+  "/docs/docs/orders/import-specific-order-531": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-orders-import-specific-order-1-d-4-a5a"
+  },
+  "/docs/docs/orders/import-unshipped-orders-ac0": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-orders-import-unshipped-orders-3-aa-ef0"
+  },
+  "/docs/docs/orders/refund-aba": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-orders-refundae-8-1e1"
+  },
+  "/docs/docs/products/export-stock-0a3": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-products-export-stockae-3-756"
+  },
+  "/docs/docs/products/import-products-f27": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-products-import-productsd-72-dc5"
+  },
+  "/docs/docs/products/import-specific-products-71d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-products-import-specific-products-09-b-9f9"
+  },
+  "/docs/docs/products/import-stock-e25": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-products-import-stock-902-cfd"
+  },
+  "/docs/docs/products/map-products-cd7": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-products-map-products-6-be-ed3"
+  },
+  "/docs/docs/products/update-products-3ed": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-products-update-productsc-13-145"
+  },
+  "/docs/docs/reference/faq-e48": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-reference-faq-2-d-0-fcd"
+  },
+  "/docs/docs/reference/release-notes-c82": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-reference-release-notese-90-54a"
+  },
+  "/docs/docs/reference/troubleshooting-678": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-reference-troubleshooting-2-de-172"
+  },
+  "/docs/docs/reports/net-profit-report-4a4": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-reports-net-profit-report-71-a-cbd"
+  },
+  "/docs/docs/reports/sales-report-d04": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-reports-sales-report-063-60e"
+  },
+  "/docs/docs/reports/shopify-payouts-ad5": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-reports-shopify-payoutscc-4-d8a"
+  },
+  "/docs/docs/reports/webhooks-configuration-369": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-docs-reports-webhooks-configurationa-28-c30"
+  },
+  "/-181": {
+    "__comp": "__comp---site-src-pages-index-jsx-9-dd-cb1",
+    "__context": {
+      "plugin": "plugin---aa-1-d17"
+    },
+    "config": "config---5-e-9-4f3"
+  }
+}

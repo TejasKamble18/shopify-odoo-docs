@@ -1,0 +1,28 @@
+{
+  "id": "docs/reports/shopify-payouts",
+  "title": "Shopify Payouts",
+  "description": "View and track payouts",
+  "source": "@site/docs/docs/reports/shopify-payouts.md",
+  "sourceDirName": "docs/reports",
+  "slug": "/docs/reports/shopify-payouts",
+  "permalink": "/docs/docs/reports/shopify-payouts",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "title": "Shopify Payouts",
+    "description": "View and track payouts"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Sales Report & Log Book",
+    "permalink": "/docs/docs/reports/sales-report"
+  },
+  "next": {
+    "title": "Net Profit Report",
+    "permalink": "/docs/docs/reports/net-profit-report"
+  }
+}

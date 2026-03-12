@@ -1,0 +1,28 @@
+{
+  "id": "docs/orders/cancel-order-shopify",
+  "title": "Cancel Order in Shopify",
+  "description": "Cancel orders in Shopify from Odoo",
+  "source": "@site/docs/docs/orders/cancel-order-shopify.md",
+  "sourceDirName": "docs/orders",
+  "slug": "/docs/orders/cancel-order-shopify",
+  "permalink": "/docs/docs/orders/cancel-order-shopify",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7,
+    "title": "Cancel Order in Shopify",
+    "description": "Cancel orders in Shopify from Odoo"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Export Shipment / Update Status",
+    "permalink": "/docs/docs/orders/export-shipment"
+  },
+  "next": {
+    "title": "Refund",
+    "permalink": "/docs/docs/orders/refund"
+  }
+}

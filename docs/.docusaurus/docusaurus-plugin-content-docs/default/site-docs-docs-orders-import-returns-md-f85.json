@@ -1,0 +1,28 @@
+{
+  "id": "docs/orders/import-returns",
+  "title": "Import Returns & Refunds",
+  "description": "Import return and refund data",
+  "source": "@site/docs/docs/orders/import-returns.md",
+  "sourceDirName": "docs/orders",
+  "slug": "/docs/orders/import-returns",
+  "permalink": "/docs/docs/orders/import-returns",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "sidebar_position": 9,
+    "title": "Import Returns & Refunds",
+    "description": "Import return and refund data"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Refund",
+    "permalink": "/docs/docs/orders/refund"
+  },
+  "next": {
+    "title": "Webhooks Configuration",
+    "permalink": "/docs/docs/reports/webhooks-configuration"
+  }
+}

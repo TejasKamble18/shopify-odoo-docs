@@ -1,0 +1,28 @@
+{
+  "id": "docs/products/update-products",
+  "title": "Update / Export Products",
+  "description": "Update and export products to Shopify",
+  "source": "@site/docs/docs/products/update-products.md",
+  "sourceDirName": "docs/products",
+  "slug": "/docs/products/update-products",
+  "permalink": "/docs/docs/products/update-products",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6,
+    "title": "Update / Export Products",
+    "description": "Update and export products to Shopify"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Import Stock",
+    "permalink": "/docs/docs/products/import-stock"
+  },
+  "next": {
+    "title": "Import Unshipped Orders",
+    "permalink": "/docs/docs/orders/import-unshipped-orders"
+  }
+}
