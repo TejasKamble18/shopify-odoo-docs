@@ -28,4 +28,4 @@ Push product changes from Odoo back to Shopify.
 - Variants and options
 - Published/draft status
 
-Stock levels are handled separately via [Export Stock](/docs/products/export-stock).
+Stock levels are handled separately via [Export Stock](/docs/shopify/products/export-stock).

@@ -8,7 +8,7 @@ if (!fs.existsSync(docsDir)) {
   fs.mkdirSync(docsDir, { recursive: true });
 }
 
-// All files to create
+// All files to create (same content as original docs/setup.js helper)
 const files = {
   'docs/installation/getting-started.md': `---
 sidebar_position: 1
@@ -38,15 +38,15 @@ Get the module from:
 
 Extract the zip file and copy to your custom addons folder:
 
-\\\`\\\`\\\`bash
+\`\`\`bash
 cp -r sdlc_shopify_connector /opt/odoo/custom_addons/
-\\\`\\\`\\\`
+\`\`\`
 
 ### Step 3: Restart Odoo
 
-\\\`\\\`\\\`bash
+\`\`\`bash
 sudo systemctl restart odoo
-\\\`\\\`\\\`
+\`\`\`
 
 ### Step 4: Update Apps List
 
@@ -728,7 +728,7 @@ Real-time with webhooks.
 ## Need help?
 
 [Contact us](https://sdlccorp.com/contact-us/)
-`
+`,
 };
 
 // Create all files
@@ -736,11 +736,11 @@ let count = 0;
 Object.keys(files).forEach(filePath => {
   const fullPath = path.join(docsDir, filePath);
   const dir = path.dirname(fullPath);
-  
+
   if (!fs.existsSync(dir)) {
     fs.mkdirSync(dir, { recursive: true });
   }
-  
+
   fs.writeFileSync(fullPath, files[filePath], 'utf8');
   console.log(`✓ ${filePath}`);
   count++;
@@ -748,3 +748,4 @@ Object.keys(files).forEach(filePath => {
 
 console.log(`\n✅ Created ${count} documentation files!`);
 console.log('\nNext step: npm run start');
+

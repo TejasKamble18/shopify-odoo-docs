@@ -19,7 +19,7 @@ The connector updates the inventory level for each mapped product in the selecte
 
 ## Automatic Export
 
-Enable the **Export Stock Scheduler** in your cron settings for automatic periodic export. See [Auto Scheduler](/docs/operations/auto-scheduler).
+Enable the **Export Stock Scheduler** in your cron settings for automatic periodic export. See [Auto Scheduler](/docs/shopify/operations/auto-scheduler).
 
 :::tip
 For real-time stock updates, webhooks handle inventory changes from Shopify. For Odoo-originated stock changes (e.g., manufacturing, transfers), use the scheduled export or trigger a manual export.

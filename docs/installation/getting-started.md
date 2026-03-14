@@ -48,5 +48,5 @@ After installation, you will see a new **Shopify** menu in the top navigation ba
 
 ## Next Steps
 
-- [Set up your Shopify store connection →](/docs/installation/setup-connector)
-- [Generate API keys →](/docs/installation/generate-api-keys)
+- [Set up your Shopify store connection →](/docs/shopify/installation/setup-connector)
+- [Generate API keys →](/docs/shopify/installation/generate-api-keys)

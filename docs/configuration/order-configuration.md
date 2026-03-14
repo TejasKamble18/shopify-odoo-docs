@@ -34,4 +34,4 @@ Enable this in **Shopify → Configuration → Auto Workflow** per order status.
 
 ## Tax Configuration
 
-See [Tax Configuration](/docs/configuration/tax-configuration) for mapping Shopify taxes to Odoo fiscal positions.
+See [Tax Configuration](/docs/shopify/configuration/tax-configuration) for mapping Shopify taxes to Odoo fiscal positions.

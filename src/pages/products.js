@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
+import SdlcNavbar from '../components/SdlcNavbar';
+import MarketingCta from '../components/MarketingCta';
 
 const PRODUCTS = [
   {
@@ -19,7 +21,7 @@ const PRODUCTS = [
     tags: ['Shopify', 'Odoo', 'Integration', 'Enterprise'],
     featured: true,
     href: 'https://apps.odoo.com/apps/modules/18.0/sdlc_shopify_connector',
-    docsHref: '/docs/intro',
+    docsHref: '/docs/shopify/intro',
   },
   {
     icon: '🌐',
@@ -116,6 +118,7 @@ export default function Products() {
       title="Products – SDLC Corp Integration Platform"
       description="Browse our enterprise Odoo integration products including Shopify–Odoo Connector and coming-soon integrations."
     >
+      <SdlcNavbar />
       {/* ── Page Header ── */}
       <div style={{
         background: 'linear-gradient(180deg, #fafafe 0%, #fff 100%)',
@@ -185,35 +188,16 @@ export default function Products() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="cta-section" style={{ paddingTop: 0 }}>
-        <div className="section-inner">
-          <div className="cta-box">
-            <div className="cta-tag">Get Started Today</div>
-            <h2 className="cta-heading">Choose your <em>integration</em></h2>
-            <p className="cta-sub">
-              Install the Shopify–Odoo Connector from the Odoo App Store, or contact us about upcoming integrations.
-            </p>
-            <div className="cta-btns">
-              <a
-                href="https://apps.odoo.com/apps/modules/18.0/sdlc_shopify_connector"
-                target="_blank"
-                rel="noreferrer"
-                className="btn-hero-primary"
-              >
-                Shopify Connector →
-              </a>
-              <a
-                href="https://sdlccorp.com/contact-us/"
-                target="_blank"
-                rel="noreferrer"
-                className="btn-hero-ghost"
-              >
-                Request Information
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <MarketingCta
+        eyebrow="Get Started Today"
+        heading="Choose your"
+        headingEmphasis="integration"
+        body="Install the Shopify–Odoo Connector from the Odoo App Store, or contact us about upcoming integrations."
+        primaryHref="https://apps.odoo.com/apps/modules/18.0/sdlc_shopify_connector"
+        primaryLabel="Shopify Connector →"
+        secondaryHref="https://sdlccorp.com/contact-us/"
+        secondaryLabel="Request Information"
+      />
     </Layout>
   );
 }

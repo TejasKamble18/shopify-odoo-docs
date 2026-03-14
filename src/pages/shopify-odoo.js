@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
+import SdlcNavbar from '../components/SdlcNavbar';
+import MarketingCta from '../components/MarketingCta';
 
 const SDLC_LOGO = 'https://sdlccorp-web-prod.blr1.digitaloceanspaces.com/wp-content/uploads/2025/12/23102543/SDLCCORP-White-Branding.png';
 
@@ -168,6 +170,7 @@ export default function ShopifyOdoo() {
       title="Shopify–Odoo Connector – SDLC Corp"
       description="Seamless real-time bidirectional sync between Shopify and Odoo ERP. Products, orders, inventory, customers and payouts — fully automated."
     >
+      <SdlcNavbar currentProduct={{ icon: '🛍️', shortName: 'Shopify Connector' }} />
       {/* ── Product Hero ── */}
       <div className="product-hero">
         <div className="product-hero-inner">
@@ -210,7 +213,7 @@ export default function ShopifyOdoo() {
               <a href="https://apps.odoo.com/apps/modules/18.0/sdlc_shopify_connector" target="_blank" rel="noreferrer" className="btn-hero-primary">
                 Install from Odoo Store →
               </a>
-              <Link to="/docs/intro" className="btn-hero-ghost">
+              <Link to="/docs/shopify/intro" className="btn-hero-ghost">
                 Read the Docs
               </Link>
             </div>
@@ -342,25 +345,17 @@ export default function ShopifyOdoo() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="cta-section">
-        <div className="section-inner">
-          <div className="cta-box">
-            <div className="cta-tag">Ready to integrate?</div>
-            <h2 className="cta-heading">Install in minutes,<br />sync <em>forever</em></h2>
-            <p className="cta-sub">
-              Available directly on the Odoo App Store. Supports all Odoo editions from v18 to v19.
-            </p>
-            <div className="cta-btns">
-              <a href="https://apps.odoo.com/apps/modules/18.0/sdlc_shopify_connector" target="_blank" rel="noreferrer" className="btn-hero-primary">
-                Install from Odoo Store →
-              </a>
-              <Link to="/docs/intro" className="btn-hero-ghost">
-                Read Documentation
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <MarketingCta
+        eyebrow="Ready to integrate?"
+        heading="Install in minutes, sync"
+        headingEmphasis="forever"
+        body="Available directly on the Odoo App Store. Supports all Odoo editions from v18 to v19."
+        primaryHref="https://apps.odoo.com/apps/modules/18.0/sdlc_shopify_connector"
+        primaryLabel="Install from Odoo Store →"
+        secondaryHref="/docs/shopify/intro"
+        secondaryLabel="Read Documentation"
+        secondaryExternal={false}
+      />
     </Layout>
   );
 }

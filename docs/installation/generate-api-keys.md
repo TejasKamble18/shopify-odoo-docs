@@ -50,4 +50,4 @@ The Admin API access token is shown **only once**. Copy and store it securely be
 
 ## Entering Credentials in Odoo
 
-Enter these values in your Shopify instance configuration in Odoo. Refer to [Setup Connector](/docs/installation/setup-connector) for the full steps.
+Enter these values in your Shopify instance configuration in Odoo. Refer to [Setup Connector](/docs/shopify/installation/setup-connector) for the full steps.

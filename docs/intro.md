@@ -33,11 +33,11 @@ The SDLC Corp Shopify–Odoo Connector is a production-ready module that synchro
 
 Follow these steps to get up and running:
 
-1. [Install the connector](/docs/installation/getting-started)
-2. [Generate your Shopify API keys](/docs/installation/generate-api-keys)
-3. [Configure your Odoo instance](/docs/installation/configure-instance)
-4. [Set up webhooks](/docs/configuration/webhook-configuration)
-5. [Import your products](/docs/products/import-products)
+1. [Install the connector](/docs/shopify/installation/getting-started)
+2. [Generate your Shopify API keys](/docs/shopify/installation/generate-api-keys)
+3. [Configure your Odoo instance](/docs/shopify/installation/configure-instance)
+4. [Set up webhooks](/docs/shopify/configuration/webhook-configuration)
+5. [Import your products](/docs/shopify/products/import-products)
 
 ## Need Help?
 

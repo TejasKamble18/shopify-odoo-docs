@@ -1,0 +1,201 @@
+/* src/css/marketing.css
+ *
+ * Marketing and navbar styles for home, products, and Shopify-Odoo pages.
+ * Keeps docs-specific rules in custom.css while sharing visual tokens here.
+ */
+
+/* ── NAVBAR ─────────────────────────────────────────── */
+.sdlc-nb * {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  box-sizing: border-box;
+}
+
+@keyframes sdlcNavPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 4px rgba(16, 185, 129, 0);
+  }
+}
+
+@keyframes sdlcNavDropIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.sdlc-nb a {
+  text-decoration: none !important;
+}
+
+/* ── HOME PAGE (sdlc-root) ─────────────────────────── */
+.sdlc-root * {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  box-sizing: border-box;
+}
+
+.sdlc-root code,
+.sdlc-root pre {
+  font-family: 'DM Mono', monospace !important;
+}
+
+@keyframes sdlcPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 5px rgba(16, 185, 129, 0);
+  }
+}
+
+@keyframes sdlcOrbitSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes sdlcOrbitCounter {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+@keyframes sdlcChipBlink {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes sdlcSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes sdlcFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes sdlcDropIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.sdlc-stagger > * {
+  animation: sdlcSlideUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.sdlc-stagger > *:nth-child(1) {
+  animation-delay: 0ms;
+}
+.sdlc-stagger > *:nth-child(2) {
+  animation-delay: 80ms;
+}
+.sdlc-stagger > *:nth-child(3) {
+  animation-delay: 160ms;
+}
+.sdlc-stagger > *:nth-child(4) {
+  animation-delay: 240ms;
+}
+.sdlc-stagger > *:nth-child(5) {
+  animation-delay: 320ms;
+}
+
+.sdlc-prod-card {
+  transition: all 0.22s cubic-bezier(0.22, 0.68, 0, 1.2);
+}
+.sdlc-prod-card:hover {
+  transform: translateY(-4px) !important;
+  border-color: rgba(99, 102, 241, 0.32) !important;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.45) !important;
+}
+
+.sdlc-feat-card {
+  transition: all 0.22s ease;
+}
+.sdlc-feat-card:hover {
+  transform: translateY(-3px);
+  background: rgba(99, 102, 241, 0.05) !important;
+  border-color: rgba(99, 102, 241, 0.18) !important;
+}
+
+.sdlc-serv-card {
+  transition: all 0.22s ease;
+}
+.sdlc-serv-card:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-color: rgba(255, 255, 255, 0.13) !important;
+}
+
+.sdlc-btn-p {
+  transition: all 0.2s ease;
+}
+.sdlc-btn-p:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(99, 102, 241, 0.5) !important;
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+.sdlc-btn-g {
+  transition: all 0.2s ease;
+}
+.sdlc-btn-g:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.25) !important;
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+@media (max-width: 900px) {
+  .sdlc-hero-g {
+    grid-template-columns: 1fr !important;
+  }
+  .sdlc-orbit-hide {
+    display: none !important;
+  }
+  .sdlc-footer-g {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .sdlc-stats-g {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .sdlc-contact-g {
+    grid-template-columns: 1fr !important;
+  }
+}
+

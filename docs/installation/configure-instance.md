@@ -40,4 +40,4 @@ Click **Save** after configuring all fields. The connector will validate the con
 
 ## Next Step
 
-Proceed to [Webhook Configuration](/docs/configuration/webhook-configuration) to enable real-time sync.
+Proceed to [Webhook Configuration](/docs/shopify/configuration/webhook-configuration) to enable real-time sync.
