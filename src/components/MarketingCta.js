@@ -3,6 +3,11 @@ import Link from '@docusaurus/Link';
 
 /**
  * Reusable CTA section used on marketing pages (products, Shopify–Odoo, etc.).
+ *
+ * FIXED: Previously, when primaryExternal=false or secondaryExternal=false,
+ * the component rendered <a href={undefined}> instead of <Link to={href}>.
+ * Now correctly routes internal paths via Docusaurus <Link to="...">
+ * and external URLs via <a href="..." target="_blank">.
  */
 export default function MarketingCta({
   eyebrow = 'Get Started Today',
@@ -16,9 +21,6 @@ export default function MarketingCta({
   primaryExternal = true,
   secondaryExternal = true,
 }) {
-  const PrimaryTag = primaryExternal ? 'a' : Link;
-  const SecondaryTag = secondaryHref ? (secondaryExternal ? 'a' : Link) : null;
-
   return (
     <section className="cta-section">
       <div className="section-inner">
@@ -33,26 +35,36 @@ export default function MarketingCta({
           {body && <p className="cta-sub">{body}</p>}
           <div className="cta-btns">
             {primaryHref && (
-              <PrimaryTag
-                href={primaryExternal ? primaryHref : undefined}
-                to={primaryExternal ? undefined : primaryHref}
-                target={primaryExternal ? '_blank' : undefined}
-                rel={primaryExternal ? 'noreferrer' : undefined}
-                className="btn-hero-primary"
-              >
-                {primaryLabel}
-              </PrimaryTag>
+              primaryExternal ? (
+                <a
+                  href={primaryHref}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn-hero-primary"
+                >
+                  {primaryLabel}
+                </a>
+              ) : (
+                <Link to={primaryHref} className="btn-hero-primary">
+                  {primaryLabel}
+                </Link>
+              )
             )}
-            {SecondaryTag && secondaryHref && (
-              <SecondaryTag
-                href={secondaryExternal ? secondaryHref : undefined}
-                to={secondaryExternal ? undefined : secondaryHref}
-                target={secondaryExternal ? '_blank' : undefined}
-                rel={secondaryExternal ? 'noreferrer' : undefined}
-                className="btn-hero-ghost"
-              >
-                {secondaryLabel}
-              </SecondaryTag>
+            {secondaryHref && (
+              secondaryExternal ? (
+                <a
+                  href={secondaryHref}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn-hero-ghost"
+                >
+                  {secondaryLabel}
+                </a>
+              ) : (
+                <Link to={secondaryHref} className="btn-hero-ghost">
+                  {secondaryLabel}
+                </Link>
+              )
             )}
           </div>
         </div>
@@ -60,4 +72,3 @@ export default function MarketingCta({
     </section>
   );
 }
-

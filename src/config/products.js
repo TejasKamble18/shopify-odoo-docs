@@ -3,7 +3,7 @@ const PRODUCT_CATEGORIES = {
   TOOL: 'Business Tools',
 };
 
-/** Core product registry: single source of truth for all products/tools. */
+/** Core product registry — single source of truth for all products/tools. */
 export const PRODUCTS = [
   {
     id: 'shopify',
@@ -11,13 +11,17 @@ export const PRODUCTS = [
     icon: '🛍️',
     name: 'Shopify–Odoo Connector',
     shortName: 'Shopify',
+    desc: 'Enterprise-grade bidirectional integration connecting your Shopify store with Odoo ERP. Automate products, orders, inventory, customers and payouts in real time.',
     color: '#96bf48',
     status: 'live',
     eta: null,
     docsBase: '/docs/shopify',
     docsIntro: '/docs/shopify/intro',
+    docsHref: '/docs/shopify/intro',
+    href: '/docs/shopify/intro',
     marketingPath: '/shopify-odoo',
     storeUrl: 'https://apps.odoo.com/apps/modules/18.0/sdlc_shopify_connector',
+    installHref: 'https://apps.odoo.com/apps/modules/18.0/sdlc_shopify_connector',
     tags: ['Real-time', 'Webhooks', 'Multi-store', 'v18–v19'],
     sections: ['Getting Started', 'Configuration', 'Product Sync', 'Order Sync', 'Inventory', 'Payouts'],
   },
@@ -27,13 +31,17 @@ export const PRODUCTS = [
     icon: '🌐',
     name: 'WooCommerce–Odoo Connector',
     shortName: 'WooCommerce',
+    desc: 'Seamless bidirectional sync between WooCommerce and Odoo ERP. Automate product catalog, order management, inventory and customer data across both platforms.',
     color: '#7f54b3',
     status: 'coming',
     eta: 'Q2 2026',
     docsBase: '/docs/woocommerce',
-    docsIntro: '/docs/woocommerce/intro',
+    docsIntro: null,
+    docsHref: null,
+    href: null,
     marketingPath: null,
     storeUrl: null,
+    installHref: null,
     tags: ['WordPress', 'REST API', 'Multi-store'],
     sections: ['Overview', 'Setup', 'Product Sync', 'Order Sync'],
   },
@@ -43,13 +51,17 @@ export const PRODUCTS = [
     icon: '🔷',
     name: 'Magento 2–Odoo Connector',
     shortName: 'Magento 2',
+    desc: 'Full-featured Magento 2 to Odoo integration built for enterprise. Multi-store, multi-language and B2B catalog support with real-time sync.',
     color: '#f46f25',
     status: 'coming',
     eta: 'Q2 2026',
     docsBase: '/docs/magento',
-    docsIntro: '/docs/magento/intro',
+    docsIntro: null,
+    docsHref: null,
+    href: null,
     marketingPath: null,
     storeUrl: null,
+    installHref: null,
     tags: ['Multi-store', 'Enterprise', 'Multi-language'],
     sections: ['Overview', 'Setup', 'Catalog Sync', 'Order Sync'],
   },
@@ -59,13 +71,17 @@ export const PRODUCTS = [
     icon: '📦',
     name: 'Amazon–Odoo Connector',
     shortName: 'Amazon',
+    desc: 'Connect Amazon Seller Central with Odoo for complete marketplace automation. FBA and FBM management, order sync, pricing optimization and inventory control.',
     color: '#ff9900',
     status: 'coming',
     eta: 'Q3 2026',
     docsBase: '/docs/amazon',
-    docsIntro: '/docs/amazon/intro',
+    docsIntro: null,
+    docsHref: null,
+    href: null,
     marketingPath: null,
     storeUrl: null,
+    installHref: null,
     tags: ['FBA/FBM', 'Marketplace', 'Seller Central'],
     sections: ['Overview', 'Seller Central', 'FBA Setup', 'Orders'],
   },
@@ -75,13 +91,17 @@ export const PRODUCTS = [
     icon: '🏷️',
     name: 'eBay–Odoo Connector',
     shortName: 'eBay',
+    desc: 'Manage eBay listings, orders and inventory directly from Odoo. Multi-account and multi-region support for global marketplace sellers.',
     color: '#e53238',
     status: 'coming',
     eta: 'Q3 2026',
     docsBase: '/docs/ebay',
-    docsIntro: '/docs/ebay/intro',
+    docsIntro: null,
+    docsHref: null,
+    href: null,
     marketingPath: null,
     storeUrl: null,
+    installHref: null,
     tags: ['Listings', 'Multi-region', 'Multi-account'],
     sections: ['Overview', 'Listing Sync', 'Orders', 'Regions'],
   },
@@ -91,13 +111,17 @@ export const PRODUCTS = [
     icon: '🚚',
     name: 'ShipStation–Odoo Connector',
     shortName: 'ShipStation',
+    desc: 'Integrate ShipStation with Odoo for seamless multi-carrier fulfillment. Automate label printing, rate shopping, return management and shipment tracking.',
     color: '#0070f3',
     status: 'coming',
     eta: 'Q1 2027',
     docsBase: '/docs/shipstation',
-    docsIntro: '/docs/shipstation/intro',
+    docsIntro: null,
+    docsHref: null,
+    href: null,
     marketingPath: null,
     storeUrl: null,
+    installHref: null,
     tags: ['Multi-carrier', 'Fulfillment', 'Labels'],
     sections: ['Overview', 'Carriers', 'Label Printing', 'Returns'],
   },
@@ -107,13 +131,17 @@ export const PRODUCTS = [
     icon: '👥',
     name: 'HRMS Dashboard',
     shortName: 'HRMS',
+    desc: 'Comprehensive HR management dashboard built natively for Odoo. Employee management, payroll, leave tracking, performance reviews and HR analytics in one place.',
     color: '#8b5cf6',
     status: 'coming',
     eta: 'Q3 2026',
     docsBase: '/docs/hrms',
-    docsIntro: '/docs/hrms/intro',
+    docsIntro: null,
+    docsHref: null,
+    href: null,
     marketingPath: null,
     storeUrl: null,
+    installHref: null,
     tags: ['HR Analytics', 'Payroll', 'Performance'],
     sections: ['Overview', 'Employee Mgmt', 'Payroll', 'Leave'],
   },
@@ -123,13 +151,17 @@ export const PRODUCTS = [
     icon: '🔐',
     name: 'Access Management',
     shortName: 'Access Mgmt',
+    desc: 'Granular role-based access control for Odoo. Define permissions at field level, enforce security policies, maintain full audit trails and manage SSO integration.',
     color: '#ec4899',
     status: 'coming',
     eta: 'Q4 2026',
     docsBase: '/docs/access',
-    docsIntro: '/docs/access/intro',
+    docsIntro: null,
+    docsHref: null,
+    href: null,
     marketingPath: null,
     storeUrl: null,
+    installHref: null,
     tags: ['Security', 'RBAC', 'Audit Trail'],
     sections: ['Overview', 'Roles & Permissions', 'Audit Logs'],
   },
@@ -139,13 +171,17 @@ export const PRODUCTS = [
     icon: '💰',
     name: 'Project Cost Management',
     shortName: 'Cost Mgmt',
+    desc: 'End-to-end project cost tracking and budgeting inside Odoo. Real-time cost forecasting, resource allocation, multi-currency support and profitability reporting.',
     color: '#f59e0b',
     status: 'coming',
     eta: 'Q4 2026',
     docsBase: '/docs/costs',
-    docsIntro: '/docs/costs/intro',
+    docsIntro: null,
+    docsHref: null,
+    href: null,
     marketingPath: null,
     storeUrl: null,
+    installHref: null,
     tags: ['Cost Tracking', 'Budgeting', 'Reporting'],
     sections: ['Overview', 'Budgets', 'Cost Tracking', 'Reports'],
   },
@@ -167,7 +203,11 @@ export const PRODUCT_GROUPS = [
   },
 ];
 
-/** Docs menu groups used in nav dropdowns. */
+/**
+ * Docs menu groups used in nav dropdowns.
+ * Only includes products with actual docs (docsIntro != null).
+ * Coming-soon items are shown but marked as non-live with no href.
+ */
 export const DOCS_GROUPS = PRODUCT_GROUPS.map(group => ({
   group: group.label,
   items: group.items.map(p => ({
@@ -175,17 +215,18 @@ export const DOCS_GROUPS = PRODUCT_GROUPS.map(group => ({
     name: p.name,
     shortName: p.shortName,
     color: p.color,
-    href: p.docsIntro,
+    href: p.docsIntro,       // null for coming-soon → handled in navbar
     live: p.status === 'live',
+    eta: p.eta,
   })),
 }));
 
 export function getProductByDocsPath(pathname) {
-  return PRODUCTS.find(p => pathname.startsWith(p.docsBase));
+  return PRODUCTS.find(p => p.docsBase && pathname.startsWith(p.docsBase)) || null;
 }
 
 export function getProductById(id) {
-  return PRODUCTS.find(p => p.id === id);
+  return PRODUCTS.find(p => p.id === id) || null;
 }
 
 export function getProductQuickSwitchList() {
@@ -194,6 +235,6 @@ export function getProductQuickSwitchList() {
     icon: p.icon,
     shortName: `${p.shortName} Connector`,
     color: p.color,
+    live: p.status === 'live',
   }));
 }
-

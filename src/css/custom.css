@@ -1,20 +1,14 @@
 /**
- * SDLC Corp — custom.css
- * Place at: src/css/custom.css
- *
- * Covers:
- *  1. Root CSS variables
- *  2. Sidebar styling
- *  3. Doc page typography
- *  4. Code blocks
- *  5. Admonitions (tip/warning/info/danger)
- *  6. Tables
- *  7. Scrollbar
+ * src/css/custom.css
+ * SDLC Corp — Docusaurus theme overrides
+ * Typography: Inter (body) + Syne (headings) + JetBrains Mono (code)
  */
 
-/* ── 1. CSS VARIABLES ─────────────────────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════════════
+   1. CSS VARIABLES
+═══════════════════════════════════════════════════════════════ */
 :root {
-  /* Brand */
+  /* ── Brand ── */
   --sdlc-purple:       #875A7B;
   --sdlc-purple-light: #C084A8;
   --sdlc-purple-dark:  #714B67;
@@ -26,7 +20,34 @@
   --sdlc-text:         #E8E0EC;
   --sdlc-text-muted:   rgba(232, 224, 236, 0.5);
 
-  /* Docusaurus overrides */
+  /* ── Font families ── */
+  --font-body:    'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Syne', sans-serif;
+  --font-mono:    'JetBrains Mono', 'Fira Code', monospace;
+
+  /* ── Type scale ── */
+  --text-hero:  clamp(3.75rem, 8vw, 7.5rem);
+  --text-h1:    clamp(2rem, 4vw, 2.75rem);
+  --text-h2:    clamp(1.5rem, 2.8vw, 2rem);
+  --text-h3:    clamp(1.125rem, 2vw, 1.25rem);
+  --text-body:  clamp(1rem, 1.5vw, 1.125rem);
+  --text-sm:    clamp(0.8125rem, 1.2vw, 0.875rem);
+  --text-xs:    0.75rem;
+
+  /* ── Letter spacing ── */
+  --tracking-hero:  -0.04em;
+  --tracking-h1:    -0.03em;
+  --tracking-h2:    -0.025em;
+  --tracking-body:   0;
+  --tracking-caps:   0.08em;
+
+  /* ── Line heights ── */
+  --leading-display: 1.05;
+  --leading-heading: 1.18;
+  --leading-body:    1.68;
+  --leading-relaxed: 1.75;
+
+  /* ── Docusaurus overrides ── */
   --ifm-color-primary:            var(--sdlc-purple);
   --ifm-color-primary-dark:       var(--sdlc-purple-dark);
   --ifm-color-primary-darker:     #5E3D58;
@@ -39,36 +60,40 @@
   --ifm-background-surface-color: var(--sdlc-bg-surface);
   --ifm-navbar-background-color:  rgba(7, 3, 12, 0.88);
   --ifm-navbar-shadow:            none;
+  --ifm-navbar-height:            0px;   /* Zero out — we use custom SdlcNavbar instead */
   --ifm-sidebar-background-color: var(--sdlc-bg-surface);
 
-  --ifm-font-family-base:    'Instrument Sans', sans-serif;
-  --ifm-font-family-monospace: 'JetBrains Mono', monospace;
-  --ifm-heading-font-family: 'Syne', sans-serif;
+  /* ── Typography via Docusaurus vars ── */
+  --ifm-font-family-base:      var(--font-body);
+  --ifm-font-family-monospace: var(--font-mono);
+  --ifm-heading-font-family:   var(--font-display);
 
-  --ifm-font-size-base:      15.5px;
-  --ifm-line-height-base:    1.72;
+  --ifm-font-size-base:      1rem;           /* 16px */
+  --ifm-line-height-base:    1.68;
   --ifm-global-radius:       8px;
 
-  /* Sidebar */
+  /* ── Sidebar ── */
   --ifm-sidebar-width:        280px;
   --ifm-menu-color:           rgba(232, 224, 236, 0.55);
   --ifm-menu-color-active:    #F0EAF5;
   --ifm-menu-color-background-active: rgba(135, 90, 123, 0.14);
   --ifm-menu-color-background-hover:  rgba(135, 90, 123, 0.08);
 
-  /* Code blocks */
+  /* ── Code blocks ── */
   --ifm-code-background:     rgba(13, 8, 19, 0.8);
   --ifm-code-border-radius:  6px;
-  --ifm-code-font-size:      0.88rem;
+  --ifm-code-font-size:      0.875rem;
 
-  /* Admonitions */
+  /* ── Admonitions ── */
   --ifm-color-info-dark:    #60A5FA;
   --ifm-color-success-dark: var(--sdlc-green);
   --ifm-color-warning-dark: #FBBF24;
   --ifm-color-danger-dark:  #F87171;
 }
 
-/* ── 2. GLOBAL ────────────────────────────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════════════
+   2. GLOBAL
+═══════════════════════════════════════════════════════════════ */
 html[data-theme='dark'] {
   --ifm-background-color:         var(--sdlc-bg);
   --ifm-background-surface-color: var(--sdlc-bg-surface);
@@ -80,7 +105,12 @@ html[data-theme='dark'] {
 body {
   background: var(--sdlc-bg);
   color: var(--sdlc-text);
-  font-family: var(--ifm-font-family-base);
+  font-family: var(--font-body);
+  font-size: var(--ifm-font-size-base);
+  line-height: var(--leading-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1;
 }
 
 /* Scrollbar */
@@ -89,25 +119,34 @@ body {
 ::-webkit-scrollbar-thumb { background: rgba(135, 90, 123, 0.35); border-radius: 99px; }
 ::-webkit-scrollbar-thumb:hover { background: rgba(135, 90, 123, 0.6); }
 
-/* ── 3. NAVBAR ────────────────────────────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════════════
+   3. NAVBAR
+   Hide Docusaurus default navbar — navigation handled entirely
+   by the custom SdlcNavbar component (fixed, z-index 5000).
+   Injected via:
+     · src/pages/index.js          (home)
+     · src/pages/products.js       (products)
+     · src/theme/DocPage/Layout/index.js  (all /docs/** pages)
+═══════════════════════════════════════════════════════════════ */
 .navbar {
-  background: rgba(7, 3, 12, 0.88) !important;
-  backdrop-filter: blur(18px);
-  border-bottom: 1px solid var(--sdlc-border);
-  box-shadow: none;
-}
-.navbar__logo img { height: 28px; }
-.navbar__title { display: none; }
-.navbar__link {
-  color: rgba(232, 224, 236, 0.6) !important;
-  font-size: 0.875rem;
-  transition: color 0.15s;
-}
-.navbar__link:hover, .navbar__link--active {
-  color: var(--sdlc-text) !important;
+  display: none !important;
 }
 
-/* ── 4. SIDEBAR ───────────────────────────────────────────────────────────── */
+/* ── Push doc layout content below our 60px custom navbar ── */
+.main-wrapper {
+  padding-top: 60px !important;
+}
+
+/* ── Sidebar: position below custom navbar ── */
+.theme-doc-sidebar-container {
+  top: 60px !important;
+  height: calc(100vh - 60px) !important;
+  position: sticky !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   4. SIDEBAR
+═══════════════════════════════════════════════════════════════ */
 .theme-doc-sidebar-container {
   border-right: 1px solid var(--sdlc-border) !important;
   background: var(--sdlc-bg-surface) !important;
@@ -118,11 +157,13 @@ body {
 }
 .menu__link {
   border-radius: 6px;
+  font-family: var(--font-body);
   font-size: 0.865rem;
+  font-weight: 500;
+  letter-spacing: var(--tracking-body);
   padding: 0.42rem 0.85rem;
   color: var(--ifm-menu-color);
   transition: color 0.15s, background 0.15s;
-  font-family: 'Instrument Sans', sans-serif;
 }
 .menu__link:hover {
   color: var(--sdlc-text);
@@ -139,9 +180,9 @@ body {
 .menu__caret:before { border-color: var(--sdlc-text-muted) transparent transparent; }
 .menu__list-item-collapsible:hover { background: transparent; }
 .menu__link--sublist {
-  font-size: 0.78rem;
-  font-family: 'JetBrains Mono', monospace;
-  letter-spacing: 0.06em;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: var(--tracking-caps);
   text-transform: uppercase;
   color: rgba(135, 90, 123, 0.8) !important;
   font-weight: 600;
@@ -149,37 +190,44 @@ body {
 }
 .menu__link--sublist:hover { color: var(--sdlc-purple-light) !important; }
 
-/* ── 5. DOC ARTICLE ───────────────────────────────────────────────────────── */
-.theme-doc-markdown {
-  max-width: 780px;
-}
+/* ═══════════════════════════════════════════════════════════════
+   5. DOC ARTICLE TYPOGRAPHY
+═══════════════════════════════════════════════════════════════ */
+.theme-doc-markdown { max-width: 780px; }
+
 article h1 {
-  font-family: 'Syne', sans-serif;
-  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3vw, 2.4rem);
   font-weight: 800;
   color: #F0EAF5;
-  letter-spacing: -0.02em;
+  letter-spacing: var(--tracking-h1);
+  line-height: var(--leading-heading);
   margin-bottom: 0.5rem;
 }
 article h2 {
-  font-family: 'Syne', sans-serif;
-  font-size: 1.35rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 2.2vw, 1.5rem);
   font-weight: 700;
   color: #F0EAF5;
-  letter-spacing: -0.01em;
+  letter-spacing: var(--tracking-h2);
+  line-height: var(--leading-snug, 1.35);
   border-bottom: 1px solid var(--sdlc-border);
   padding-bottom: 0.5rem;
   margin-top: 2.5rem;
 }
 article h3 {
-  font-family: 'Syne', sans-serif;
+  font-family: var(--font-display);
   font-size: 1.05rem;
   font-weight: 700;
+  letter-spacing: var(--tracking-h3, -0.01em);
   color: #E8E0EC;
 }
 article p {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
   color: rgba(232, 224, 236, 0.72);
-  line-height: 1.75;
+  line-height: var(--leading-body);
+  font-weight: 400;
 }
 article a {
   color: var(--sdlc-purple-light);
@@ -191,16 +239,28 @@ article a:hover {
   color: #D4A0C4;
   border-bottom-color: rgba(192, 132, 168, 0.7);
 }
-article strong { color: #F0EAF5; font-weight: 600; }
+article strong {
+  font-family: var(--font-body);
+  color: #F0EAF5;
+  font-weight: 600;
+}
+article li {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: rgba(232, 224, 236, 0.72);
+  line-height: var(--leading-body);
+}
 
-/* ── 6. CODE ──────────────────────────────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════════════
+   6. CODE
+═══════════════════════════════════════════════════════════════ */
 code {
   background: rgba(135, 90, 123, 0.12) !important;
   color: #C084A8 !important;
   border: 1px solid rgba(135, 90, 123, 0.2) !important;
   border-radius: 4px !important;
   padding: 0.15em 0.45em !important;
-  font-family: 'JetBrains Mono', monospace !important;
+  font-family: var(--font-mono) !important;
   font-size: 0.875em !important;
 }
 .theme-code-block {
@@ -214,47 +274,45 @@ code {
   color: inherit !important;
   border: none !important;
   padding: 0 !important;
+  font-family: var(--font-mono) !important;
   font-size: 0.875rem !important;
 }
-.codeBlockTitle_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module {
-  background: rgba(13,8,19,0.8) !important;
-  border-bottom: 1px solid var(--sdlc-border) !important;
-  color: var(--sdlc-text-muted) !important;
-  font-family: 'JetBrains Mono', monospace !important;
-  font-size: 0.78rem !important;
-}
 
-/* ── 7. ADMONITIONS ───────────────────────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════════════
+   7. ADMONITIONS
+═══════════════════════════════════════════════════════════════ */
 .admonition {
   border-radius: 8px !important;
   border: 1px solid !important;
   background: rgba(13, 8, 19, 0.7) !important;
+  font-family: var(--font-body);
 }
 .admonition-icon svg { fill: currentColor; }
 .alert--info    { border-color: rgba(96, 165, 250, 0.3) !important; color: #93C5FD !important; }
 .alert--success { border-color: rgba(0, 200, 150, 0.3) !important; color: #00C896 !important; }
 .alert--warning { border-color: rgba(251, 191, 36, 0.3) !important; color: #FCD34D !important; }
 .alert--danger  { border-color: rgba(248, 113, 113, 0.3) !important; color: #FCA5A5 !important; }
-.admonition p { color: inherit !important; opacity: 0.85; }
+.admonition p { color: inherit !important; opacity: 0.85; font-family: var(--font-body); }
 
-/* ── 8. TABLES ────────────────────────────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════════════
+   8. TABLES
+═══════════════════════════════════════════════════════════════ */
 table {
   border-collapse: collapse;
   width: 100%;
-  font-size: 0.9rem;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
   border-radius: 8px;
   overflow: hidden;
   border: 1px solid var(--sdlc-border);
 }
-thead tr {
-  background: rgba(135, 90, 123, 0.12);
-}
+thead tr { background: rgba(135, 90, 123, 0.12); }
 thead th {
   color: var(--sdlc-purple-light);
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: var(--tracking-caps);
   padding: 0.75rem 1rem;
   border-bottom: 1px solid var(--sdlc-border);
   font-weight: 500;
@@ -265,68 +323,84 @@ tbody td {
   padding: 0.7rem 1rem;
   color: rgba(232, 224, 236, 0.7);
   vertical-align: top;
+  font-family: var(--font-body);
+  line-height: var(--leading-body);
 }
 
-/* ── 9. BREADCRUMBS & TOC ─────────────────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════════════
+   9. BREADCRUMBS & TOC
+═══════════════════════════════════════════════════════════════ */
 .breadcrumbs__item--active .breadcrumbs__link {
   color: var(--sdlc-purple-light);
   background: transparent;
 }
 .breadcrumbs__link {
   color: var(--sdlc-text-muted);
-  font-size: 0.82rem;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
 }
 .table-of-contents__link {
   color: var(--sdlc-text-muted);
+  font-family: var(--font-body);
   font-size: 0.83rem;
   transition: color 0.15s;
 }
 .table-of-contents__link:hover,
-.table-of-contents__link--active {
-  color: var(--sdlc-purple-light);
-}
-.table-of-contents__left-border {
-  border-left: 2px solid var(--sdlc-border);
-}
+.table-of-contents__link--active { color: var(--sdlc-purple-light); }
+.table-of-contents__left-border { border-left: 2px solid var(--sdlc-border); }
 
-/* ── 10. PAGINATION ───────────────────────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════════════
+   10. PAGINATION
+═══════════════════════════════════════════════════════════════ */
 .pagination-nav__link {
   background: var(--sdlc-bg-card);
   border: 1px solid var(--sdlc-border);
   border-radius: 8px;
   transition: all 0.2s;
+  font-family: var(--font-body);
 }
 .pagination-nav__link:hover {
   border-color: rgba(135, 90, 123, 0.4);
   background: rgba(135, 90, 123, 0.08);
   text-decoration: none;
 }
-.pagination-nav__label { color: var(--sdlc-purple-light); }
+.pagination-nav__label { color: var(--sdlc-purple-light); font-weight: 600; }
 .pagination-nav__sublabel { color: var(--sdlc-text-muted); font-size: 0.8rem; }
 
-/* ── 11. FOOTER (doc pages) ───────────────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════════════
+   11. FOOTER (doc pages)
+═══════════════════════════════════════════════════════════════ */
 .footer {
   background: var(--sdlc-bg) !important;
   border-top: 1px solid var(--sdlc-border);
+  font-family: var(--font-body);
 }
 .footer__copyright {
   color: var(--sdlc-text-muted);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 0.78rem;
 }
 
-/* ── 12. SEARCH BAR ───────────────────────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════════════
+   12. SEARCH BAR
+═══════════════════════════════════════════════════════════════ */
 .navbar__search-input {
   background: rgba(135, 90, 123, 0.08) !important;
   border: 1px solid var(--sdlc-border) !important;
   color: var(--sdlc-text) !important;
   border-radius: 6px !important;
+  font-family: var(--font-body) !important;
 }
-.navbar__search-input::placeholder { color: var(--sdlc-text-muted) !important; }
+.navbar__search-input::placeholder {
+  color: var(--sdlc-text-muted) !important;
+  font-family: var(--font-body) !important;
+}
 
-/* ── 13. DOC VERSION / TAG BADGES ─────────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════════════
+   13. BADGES / TAGS
+═══════════════════════════════════════════════════════════════ */
 .badge {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 0.72rem;
   border-radius: 4px;
 }

@@ -1,8 +1,11 @@
 // docusaurus.config.js
-// ─────────────────────────────────────────────────────────────────────────────
 // SDLC Corp — Odoo Integration Platform
-// Updated config: adds Google Fonts, better meta, custom CSS vars
-// ─────────────────────────────────────────────────────────────────────────────
+//
+// MULTI-INSTANCE DOCS — key rules:
+//   • Preset docs: NO explicit `id` (stays as implicit 'default') ← required
+//   • Each plugins[] entry: unique id that is NOT 'default'
+//   • `path` values are relative to this file (project root)
+//   • Do NOT add slug: /intro to intro.md files — routeBasePath handles routing
 
 // @ts-check
 const { themes: prismThemes } = require('prism-react-renderer');
@@ -13,7 +16,7 @@ const config = {
   tagline: 'Enterprise-grade connectors and business tools built for Odoo ERP.',
   favicon: 'img/favicon.ico',
 
-  url: 'https://docs.sdlccorp.com',   // ← update to your real docs URL
+  url: 'https://docs.sdlccorp.com',
   baseUrl: '/',
 
   organizationName: 'sdlccorp',
@@ -22,7 +25,6 @@ const config = {
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
-  // ── Google Fonts (Syne + JetBrains Mono + Instrument Sans) ─────────────────
   headTags: [
     {
       tagName: 'link',
@@ -36,19 +38,15 @@ const config = {
       tagName: 'link',
       attributes: {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&family=Instrument+Sans:ital,wght@0,400;0,500;1,400&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap',
       },
     },
-    // Open Graph / Social meta
-    { tagName: 'meta', attributes: { property: 'og:title', content: 'SDLC Corp — Odoo Integration Platform' } },
-    { tagName: 'meta', attributes: { property: 'og:description', content: 'Enterprise-grade connectors that sync Shopify, WooCommerce, Amazon and more with Odoo ERP.' } },
-    { tagName: 'meta', attributes: { name: 'theme-color', content: '#07030C' } },
+    { tagName: 'meta', attributes: { property: 'og:title',       content: 'SDLC Corp — Odoo Integration Platform' } },
+    { tagName: 'meta', attributes: { property: 'og:description', content: 'Enterprise-grade connectors for Shopify, WooCommerce, Amazon and more with Odoo ERP.' } },
+    { tagName: 'meta', attributes: { name: 'theme-color',        content: '#07030C' } },
   ],
 
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
+  i18n: { defaultLocale: 'en', locales: ['en'] },
 
   presets: [
     [
@@ -56,6 +54,8 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          // ⚠️ NO `id` field — must remain the implicit 'default' instance.
+          // Docusaurus requires this when using multi-instance docs via plugins[].
           path: 'docs',
           routeBasePath: 'docs/shopify',
           sidebarPath: require.resolve('./sidebars.js'),
@@ -64,9 +64,44 @@ const config = {
         },
         blog: false,
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: [
+            require.resolve('./src/css/custom.css'),
+            require.resolve('./src/css/marketing.css'),
+          ],
         },
       }),
+    ],
+  ],
+
+  plugins: [
+    // ── HRMS Dashboard docs ─────────────────────────────────────────────────
+    // Folder: <project_root>/docs-hrms/
+    // Routes: /docs/hrms/*
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'hrms',
+        path: 'docs-hrms',
+        routeBasePath: 'docs/hrms',
+        sidebarPath: require.resolve('./sidebars-hrms.js'),
+        sidebarCollapsible: true,
+        editUrl: undefined,
+      },
+    ],
+
+    // ── Project Cost Management docs ────────────────────────────────────────
+    // Folder: <project_root>/docs-costs/
+    // Routes: /docs/costs/*
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'costs',
+        path: 'docs-costs',
+        routeBasePath: 'docs/costs',
+        sidebarPath: require.resolve('./sidebars-costs.js'),
+        sidebarCollapsible: true,
+        editUrl: undefined,
+      },
     ],
   ],
 
@@ -75,7 +110,7 @@ const config = {
     ({
       metadata: [
         { name: 'description', content: 'Enterprise-grade Odoo connectors for Shopify, WooCommerce, Amazon, and more.' },
-        { name: 'keywords', content: 'Odoo, Shopify, WooCommerce, Magento, Amazon, ERP integration, connector' },
+        { name: 'keywords',    content: 'Odoo, Shopify, WooCommerce, HRMS, Project Cost, ERP integration' },
       ],
 
       navbar: {
@@ -84,7 +119,7 @@ const config = {
           alt: 'SDLC Corp',
           src: 'https://sdlccorp-web-prod.blr1.digitaloceanspaces.com/wp-content/uploads/2025/12/23102543/SDLCCORP-White-Branding.png',
         },
-        items: [],   // navigation handled by custom navbar in index.js
+        items: [],
       },
 
       footer: {
@@ -103,27 +138,7 @@ const config = {
         disableSwitch: true,
         respectPrefersColorScheme: false,
       },
-
-      // Algolia DocSearch — uncomment when you have a key
-      // algolia: {
-      //   appId: 'YOUR_APP_ID',
-      //   apiKey: 'YOUR_SEARCH_API_KEY',
-      //   indexName: 'sdlccorp',
-      // },
     }),
 };
 
 module.exports = config;
-
-
-// ─────────────────────────────────────────────────────────────────────────────
-// ADDING NEW PRODUCTS LATER
-// ─────────────────────────────────────────────────────────────────────────────
-// plugins: [
-//   ['@docusaurus/plugin-content-docs', {
-//     id: 'woocommerce',
-//     path: 'docs-woocommerce',
-//     routeBasePath: 'docs/woocommerce',
-//     sidebarPath: require.resolve('./sidebars-woocommerce.js'),
-//   }],
-// ],

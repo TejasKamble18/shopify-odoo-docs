@@ -53,10 +53,31 @@
   --shadow-xl:      0 24px 64px rgba(0,0,0,.18);
 
   /* ── Typography ── */
-  --font:           'Sora', 'Segoe UI', sans-serif;
-  --mono:           'JetBrains Mono', 'Fira Code', monospace;
-  --ease:           cubic-bezier(.22,.68,0,1.2);
-  --ease-out:       cubic-bezier(.16,1,.3,1);
+/* ── Typography ── */
+--font:    'Inter', system-ui, -apple-system, sans-serif;
+--display: 'Syne', sans-serif;
+--mono:    'JetBrains Mono', 'Fira Code', monospace;
+
+/* Type scale */
+--text-hero:  clamp(3.75rem, 8vw, 7.5rem);
+--text-h1:    clamp(2rem, 4vw, 2.75rem);
+--text-h2:    clamp(1.5rem, 2.8vw, 2rem);
+--text-h3:    clamp(1.125rem, 2vw, 1.25rem);
+--text-body:  clamp(1rem, 1.5vw, 1.125rem);
+--text-sm:    clamp(0.8125rem, 1.2vw, 0.875rem);
+
+/* Letter spacing */
+--tracking-hero:  -0.04em;
+--tracking-h1:    -0.03em;
+--tracking-h2:    -0.025em;
+--tracking-body:   0;
+--tracking-caps:   0.08em;
+
+/* Line heights */
+--leading-display: 1.05;
+--leading-heading: 1.18;
+--leading-body:    1.68;
+--leading-relaxed: 1.75;
 }
 
 /* ═══════════════════════════════════════════════════════════════════════════
@@ -100,6 +121,35 @@ img {
 button {
   font-family: var(--font);
   cursor: pointer;
+}
+
+/* ── Heading elements — Syne display font ── */
+
+h1, h2, h3, h4,
+.page-title,
+.section-title,
+.hero-title,
+.product-hero-text h1,
+.cta-box h2 {
+  font-family: var(--display);
+  letter-spacing: -0.03em;
+}
+
+h1 {
+  font-size: var(--text-h1);
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+h2 {
+  font-size: var(--text-h2);
+  font-weight: 700;
+  line-height: 1.18;
+}
+
+h3 {
+  font-size: var(--text-h3);
+  font-weight: 700;
 }
 
 /* ═══════════════════════════════════════════════════════════════════════════
@@ -294,7 +344,7 @@ button {
 }
 
 .hero-title {
-  font-size: 3rem;
+  font-size: var(--text-hero);
   font-weight: 800;
   letter-spacing: -0.045em;
   line-height: 1.1;
@@ -1942,6 +1992,7 @@ button {
 }
 
 .content code {
+  code, pre, kbd {
   font-family: var(--mono);
   font-size: .79em;
   background: #f0f2fa;
@@ -1949,6 +2000,7 @@ button {
   padding: 2px 5px;
   border-radius: 4px;
   letter-spacing: -.01em;
+}
 }
 
 .content pre {
@@ -2086,7 +2138,7 @@ button {
 .steps {
   margin: 20px 0;
 }
-
+ 
 .step {
   display: flex;
   gap: 14px;
@@ -2097,13 +2149,13 @@ button {
   border: 1px solid var(--border);
   transition: border-color .15s, box-shadow .15s, transform .18s var(--ease);
 }
-
+ 
 .step:hover {
   border-color: var(--blue);
   box-shadow: var(--shadow-sm);
   transform: translateX(3px);
 }
-
+ 
 .step-num {
   width: 28px;
   height: 28px;
@@ -2112,11 +2164,27 @@ button {
   color: #fff;
   display: flex;
   align-items: center;
-  justify-.header {
-    background: linear-gradient(to right, #4a90e2, #50e3c2);
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: .9rem;
+  flex-shrink: 0;
+}
+ 
+.step-content {
+  flex: 1;
+}
+ 
+.step-title {
+  font-size: .9rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+ 
+.step-desc {
+  font-size: .86rem;
+  color: var(--txt3);
+  line-height: 1.6;
 }
 
 .navbar {
@@ -2170,5 +2238,4 @@ button {
 
 .button:hover {
     background-color: #45a049;
-}
 }

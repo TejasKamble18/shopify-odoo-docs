@@ -4,9 +4,11 @@
  * Swizzled Docusaurus DocPage Layout.
  * Wraps every /docs/** page with the SDLC Corp branded navbar.
  *
- * To create this file in your project run:
- *   npx docusaurus swizzle @docusaurus/theme-classic DocPage/Layout --wrap --typescript false
- * Then replace the content with this file.
+ * IMPORTANT: This file MUST be named index.js (not DocPageLayout.js)
+ * for Docusaurus swizzle to pick it up correctly.
+ *
+ * To create this file run:
+ *   npx docusaurus swizzle @docusaurus/theme-classic DocPage/Layout --wrap
  */
 
 import React from 'react';
