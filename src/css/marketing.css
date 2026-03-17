@@ -70,8 +70,11 @@
 ═══════════════════════════════════════════════════════════════ */
 .sdlc-root *,
 .sdlc-home * {
-  font-family: var(--font-body, 'Inter', system-ui, sans-serif);
   box-sizing: border-box;
+}
+.sdlc-root,
+.sdlc-home {
+  font-family: var(--font-body);
 }
 .sdlc-root code,
 .sdlc-root pre,
@@ -84,16 +87,21 @@
 .sdlc-root h1,
 .sdlc-root h2,
 .sdlc-root h3,
+.sdlc-root h4,
 .sdlc-home h1,
 .sdlc-home h2,
-.sdlc-home h3 {
-  font-family: var(--font-display, 'Syne', sans-serif) !important;
+.sdlc-home h3,
+.sdlc-home h4 {
+  font-family: var(--font-display) !important;
 }
 
 /* Products page */
 .sdlc-products * {
-  font-family: var(--font-body, 'Inter', system-ui, sans-serif);
   box-sizing: border-box;
+}
+
+.sdlc-products {
+  font-family: var(--font-body);
 }
 .sdlc-products h1,
 .sdlc-products h2,
@@ -106,8 +114,11 @@
 
 /* Docs landing page */
 .sdlc-docs-root * {
-  font-family: var(--font-body, 'Inter', system-ui, sans-serif);
   box-sizing: border-box;
+}
+
+.sdlc-docs-root {
+  font-family: var(--font-body);
 }
 .sdlc-docs-root h1,
 .sdlc-docs-root h2,
@@ -206,4 +217,9 @@
   .sdlc-footer-g   { grid-template-columns: 1fr 1fr !important; }
   .sdlc-stats-g    { grid-template-columns: 1fr 1fr !important; }
   .sdlc-contact-g  { grid-template-columns: 1fr !important; }
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Syne', sans-serif !important;
+  font-weight: 700;
 }

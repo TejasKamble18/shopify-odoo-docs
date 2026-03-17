@@ -32,11 +32,11 @@ The SDLC Corp Project Cost Management module gives you real-time visibility into
 
 ## Documentation Sections
 
-1. [Installation & Setup](getting-started)
-2. [Budget Management](budgets)
-3. [Cost Tracking](cost-tracking)
-4. [Forecasting](forecasting)
-5. [Reports & Dashboards](reports)
+1. [Installation & Setup](installation/getting-started)
+2. [Budget Management](budgets/budgets)
+3. [Cost Tracking](tracking/cost-tracking)
+4. [Forecasting](forecasting/forecasting)
+5. [Reports & Dashboards](reports/reports)
 
 ## Need Help?
 

@@ -284,7 +284,7 @@ export default function Products() {
             <h1 style={{
               fontFamily: "'Syne', sans-serif",
               fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)',
-              fontWeight: 800,
+              fontWeight: 700,
               letterSpacing: '-.03em',
               lineHeight: 1.2,
               color: '#fff',
@@ -402,7 +402,7 @@ export default function Products() {
             <h2 style={{
               fontFamily: "'Syne', sans-serif",
               fontSize: 'clamp(1.25rem, 2.5vw, 1.6rem)',
-              fontWeight: 800, letterSpacing: '-.025em', color: '#fff', marginBottom: 10,
+              fontWeight: 700, letterSpacing: '-.025em', color: '#fff', marginBottom: 10,
             }}>
               Can't find what you need?
             </h2>

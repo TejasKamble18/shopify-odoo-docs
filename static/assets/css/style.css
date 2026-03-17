@@ -54,9 +54,9 @@
 
   /* ── Typography ── */
 /* ── Typography ── */
---font:    'Inter', system-ui, -apple-system, sans-serif;
---display: 'Syne', sans-serif;
---mono:    'JetBrains Mono', 'Fira Code', monospace;
+--font-body: 'Inter', system-ui, -apple-system, sans-serif;
+--font-display: 'Syne', sans-serif;
+--font-mono: 'JetBrains Mono', 'Fira Code', monospace;
 
 /* Type scale */
 --text-hero:  clamp(3.75rem, 8vw, 7.5rem);
@@ -93,7 +93,7 @@ html {
 }
 
 body {
-  font-family: var(--font);
+  font-family: var(--font-body);
   color: var(--txt);
   background: var(--bg);
   line-height: 1.72;
@@ -130,13 +130,12 @@ h1, h2, h3, h4,
 .hero-title,
 .product-hero-text h1,
 .cta-box h2 {
-  font-family: var(--display);
-  letter-spacing: -0.03em;
+  font-family: var(--font-display);
 }
 
 h1 {
   font-size: var(--text-h1);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.05;
 }
 
@@ -219,7 +218,7 @@ h3 {
   align-items: center;
   justify-content: center;
   font-size: .75rem;
-  font-weight: 800;
+  font-weight: 700;
   color: #fff;
   flex-shrink: 0;
 }
@@ -344,7 +343,7 @@ h3 {
 
 .hero-title {
   font-size: var(--text-hero);
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.045em;
   line-height: 1.1;
   margin-bottom: 20px;
@@ -385,7 +384,7 @@ h3 {
 
 .stat-value {
   font-size: 1.75rem;
-  font-weight: 800;
+  font-weight: 700;
   color: #fff;
 }
 
@@ -1992,7 +1991,7 @@ h3 {
 
 .content code {
   code, pre, kbd {
-  font-family: var(--mono);
+  font-family: var(--font-mono);
   font-size: .79em;
   background: #f0f2fa;
   color: #b91c1c;

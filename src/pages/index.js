@@ -11,7 +11,7 @@ const STYLES = `
   @import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap');
 
   .sdlc-home {
-    font-family: 'Syne', system-ui, -apple-system, sans-serif;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
     background: #06080f;
     color: #fff;
     min-height: 100vh;
@@ -279,9 +279,9 @@ export default function Home() {
 
             {/* Plain heading — no pill, no dot */}
             <h1 style={{
-              fontFamily: "'Syne', system-ui, -apple-system, sans-serif'",
+              fontFamily: "Syne, sans-serif",
               fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)',
-              fontWeight: 800,
+              fontWeight: 700,
               letterSpacing: '-.03em',
               lineHeight: 1.2,
               color: '#fff',

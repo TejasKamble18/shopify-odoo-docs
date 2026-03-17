@@ -125,6 +125,8 @@ export const PRODUCTS = [
     tags: ['Multi-carrier', 'Fulfillment', 'Labels'],
     sections: ['Overview', 'Carriers', 'Label Printing', 'Returns'],
   },
+  // ─── LIVE: HRMS Dashboard ─────────────────────────────────────────────────
+  // FIX C1: Changed status 'coming' → 'live', docsIntro/docsHref/href set
   {
     id: 'hrms',
     category: PRODUCT_CATEGORIES.TOOL,
@@ -133,17 +135,17 @@ export const PRODUCTS = [
     shortName: 'HRMS',
     desc: 'Comprehensive HR management dashboard built natively for Odoo. Employee management, payroll, leave tracking, performance reviews and HR analytics in one place.',
     color: '#8b5cf6',
-    status: 'coming',
-    eta: 'Q3 2026',
+    status: 'live',
+    eta: null,
     docsBase: '/docs/hrms',
-    docsIntro: null,
-    docsHref: null,
-    href: null,
+    docsIntro: '/docs/hrms/intro',
+    docsHref: '/docs/hrms/intro',
+    href: '/docs/hrms/intro',
     marketingPath: null,
     storeUrl: null,
     installHref: null,
     tags: ['HR Analytics', 'Payroll', 'Performance'],
-    sections: ['Overview', 'Employee Mgmt', 'Payroll', 'Leave'],
+    sections: ['Getting Started', 'Employee Mgmt', 'Payroll', 'Leave', 'Reports'],
   },
   {
     id: 'access',
@@ -165,6 +167,8 @@ export const PRODUCTS = [
     tags: ['Security', 'RBAC', 'Audit Trail'],
     sections: ['Overview', 'Roles & Permissions', 'Audit Logs'],
   },
+  // ─── LIVE: Project Cost Management ───────────────────────────────────────
+  // FIX C1: Changed status 'coming' → 'live', docsIntro/docsHref/href set
   {
     id: 'costs',
     category: PRODUCT_CATEGORIES.TOOL,
@@ -173,17 +177,17 @@ export const PRODUCTS = [
     shortName: 'Cost Mgmt',
     desc: 'End-to-end project cost tracking and budgeting inside Odoo. Real-time cost forecasting, resource allocation, multi-currency support and profitability reporting.',
     color: '#f59e0b',
-    status: 'coming',
-    eta: 'Q4 2026',
+    status: 'live',
+    eta: null,
     docsBase: '/docs/costs',
-    docsIntro: null,
-    docsHref: null,
-    href: null,
+    docsIntro: '/docs/costs/intro',
+    docsHref: '/docs/costs/intro',
+    href: '/docs/costs/intro',
     marketingPath: null,
     storeUrl: null,
     installHref: null,
     tags: ['Cost Tracking', 'Budgeting', 'Reporting'],
-    sections: ['Overview', 'Budgets', 'Cost Tracking', 'Reports'],
+    sections: ['Getting Started', 'Budgets', 'Cost Tracking', 'Forecasting', 'Reports'],
   },
 ];
 
@@ -204,9 +208,8 @@ export const PRODUCT_GROUPS = [
 ];
 
 /**
- * Docs menu groups used in nav dropdowns.
- * Only includes products with actual docs (docsIntro != null).
- * Coming-soon items are shown but marked as non-live with no href.
+ * Docs menu groups — shown in navbar dropdown.
+ * Coming-soon items are shown dimmed with no href.
  */
 export const DOCS_GROUPS = PRODUCT_GROUPS.map(group => ({
   group: group.label,
@@ -215,7 +218,7 @@ export const DOCS_GROUPS = PRODUCT_GROUPS.map(group => ({
     name: p.name,
     shortName: p.shortName,
     color: p.color,
-    href: p.docsIntro,       // null for coming-soon → handled in navbar
+    href: p.docsIntro,
     live: p.status === 'live',
     eta: p.eta,
   })),
@@ -233,7 +236,7 @@ export function getProductQuickSwitchList() {
   return PRODUCTS.map(p => ({
     prefix: p.docsBase,
     icon: p.icon,
-    shortName: `${p.shortName} Connector`,
+    shortName: `${p.shortName}`,
     color: p.color,
     live: p.status === 'live',
   }));

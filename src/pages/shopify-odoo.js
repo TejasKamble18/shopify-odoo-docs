@@ -271,7 +271,7 @@ export default function ShopifyOdoo() {
                   width: 44, height: 44, borderRadius: '50%',
                   background: 'var(--brand)', color: '#fff',
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  fontWeight: 800, fontSize: '1.2rem',
+                  fontWeight: 700, fontSize: '1.2rem',
                   margin: '0 auto 16px',
                 }}>
                   {s.num}

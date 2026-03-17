@@ -9,10 +9,18 @@ const LOGO_URL =
 const NAV_STYLES_ID = 'sdlc-nav-styles';
 function injectNavStyles() {
   if (typeof document === 'undefined' || document.getElementById(NAV_STYLES_ID)) return;
+  // FIX M1: Load fonts via <link> not @import (browsers ignore @import in injected styles)
+  const FONT_LINK_ID = 'sdlc-nav-fonts';
+  if (!document.getElementById(FONT_LINK_ID)) {
+    const link = document.createElement('link');
+    link.id = FONT_LINK_ID;
+    link.rel = 'stylesheet';
+    link.href = 'https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap';
+    document.head.appendChild(link);
+  }
   const s = document.createElement('style');
   s.id = NAV_STYLES_ID;
   s.textContent = `
-    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap');
     @keyframes sdlcNavPulse { 0%,100%{opacity:1} 50%{opacity:.4} }
     @keyframes sdlcDropIn   { from{opacity:0;transform:translateY(-6px)} to{opacity:1;transform:translateY(0)} }
     .sdlc-nav-link {

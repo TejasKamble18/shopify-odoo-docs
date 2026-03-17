@@ -30,7 +30,12 @@ export default function DocsLanding() {
       live: p.status === 'live',
     }))
   );
-  const filtered = filter === 'All' ? allItems : allItems.filter(p => p.groupCat === filter);
+  const filtered = filter === 'All'
+    ? allItems
+    : allItems.filter(p => {
+        const cat = filter === 'Odoo Connectors' ? 'Connectors' : filter;
+        return p.groupCat === cat;
+      });
 
   useEffect(() => {
     const id = 'sdlc-docs-landing-styles';
@@ -87,7 +92,7 @@ export default function DocsLanding() {
 
             {/* Filter tabs */}
             <div style={{ display: 'flex', justifyContent: 'center', gap: 8 }}>
-              {['All', 'Connectors', 'Business Tools'].map(cat => (
+              {['All', 'Odoo Connectors'].map(cat => (
                 <button key={cat} onClick={() => setFilter(cat)} style={{
                   padding: '7px 18px',
                   background: filter === cat ? 'rgba(99,102,241,.18)' : 'rgba(255,255,255,.04)',

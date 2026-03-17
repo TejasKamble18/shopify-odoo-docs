@@ -32,13 +32,11 @@ The SDLC Corp HRMS Dashboard is a production-ready Odoo module that centralises 
 
 ## Documentation Sections
 
-Full guides are being prepared for each area:
-
-1. [Installation & Setup](./installation/getting-started)
-2. [Employee Management](./employees/employee-management)
-3. [Payroll](./payroll/payroll)
-4. [Leave & Attendance](./leave/leave-attendance)
-5. [Reports & Analytics](./reports/reports)
+1. [Installation & Setup](installation/getting-started)
+2. [Employee Management](employees/employee-management)
+3. [Payroll](payroll/payroll)
+4. [Leave & Attendance](leave/leave-attendance)
+5. [Reports & Analytics](reports/reports)
 
 ## Need Help?
 

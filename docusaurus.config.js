@@ -22,7 +22,7 @@ const config = {
   organizationName: 'sdlccorp',
   projectName: 'sdlc-docusaurus',
 
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
   headTags: [

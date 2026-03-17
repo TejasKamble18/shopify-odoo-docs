@@ -2,7 +2,6 @@
 id: intro
 title: Welcome to SDLC Corp Docs
 sidebar_label: 👋 Welcome
-slug: /intro
 ---
 
 # Shopify–Odoo Connector Documentation
