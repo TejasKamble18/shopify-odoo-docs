@@ -201,7 +201,7 @@ export default function ShopifyOdoo() {
               ))}
             </div>
 
-            <h1 style={{ fontFamily: "'DM Serif Display', serif", fontSize: '2.8rem', fontWeight: 800, letterSpacing: '-0.04em', lineHeight: 1.15, color: '#fff', marginBottom: 16 }}>
+            <h1 style={{ fontFamily: "'DM Serif Display', serif", fontSize: '2.8rem', fontWeight: 700, letterSpacing: '-0.04em', lineHeight: 1.15, color: '#fff', marginBottom: 16 }}>
               Shopify–Odoo<br />Connector
             </h1>
             <p style={{ fontSize: '1.15rem', color: 'rgba(255,255,255,.72)', lineHeight: 1.72, marginBottom: 32, maxWidth: 500 }}>
@@ -226,7 +226,7 @@ export default function ShopifyOdoo() {
                 { val: '24/7', lbl: 'Expert Support' },
               ].map((s) => (
                 <div key={s.lbl} style={{ textAlign: 'center' }}>
-                  <div style={{ fontSize: '1.6rem', fontWeight: 800, color: '#fff', lineHeight: 1.1 }}>{s.val}</div>
+                  <div style={{ fontSize: '1.6rem', fontWeight: 700, color: '#fff', lineHeight: 1.1 }}>{s.val}</div>
                   <div style={{ fontSize: '.78rem', color: 'rgba(255,255,255,.5)', marginTop: 4 }}>{s.lbl}</div>
                 </div>
               ))}

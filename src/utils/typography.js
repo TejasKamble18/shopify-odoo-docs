@@ -6,14 +6,14 @@
 
 /** Google Fonts URL — single source, load once */
 export const GOOGLE_FONTS_URL =
-  'https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap';
+  'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap'
 
 /** @import statement for injection into <style> tags */
 export const FONTS_IMPORT = `@import url('${GOOGLE_FONTS_URL}');`;
 
 /** Font-family stacks */
 export const FONT_BODY    = "'Inter', system-ui, -apple-system, sans-serif";
-export const FONT_DISPLAY = "'Syne', sans-serif";
+export const FONT_DISPLAY = "'Inter', system-ui, -apple-system, sans-serif";
 export const FONT_MONO    = "'JetBrains Mono', 'Fira Code', monospace";
 
 /**
@@ -56,5 +56,5 @@ export const TYPOGRAPHY_CSS_VARS = `
   --weight-medium:   500;
   --weight-semibold: 600;
   --weight-bold:     700;
-  --weight-black:    800;
+  --weight-black:    700;
 `;

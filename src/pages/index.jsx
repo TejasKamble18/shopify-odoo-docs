@@ -8,7 +8,7 @@ import { PRODUCTS, PRODUCT_GROUPS } from '../config/products';
    STYLES
 ───────────────────────────────────────────────────── */
 const STYLES = `
-  @import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
 
   .sdlc-home {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
@@ -279,7 +279,7 @@ export default function Home() {
 
             {/* Plain heading — no pill, no dot */}
             <h1 style={{
-              fontFamily: "Syne, sans-serif",
+              fontFamily: "'Inter', system-ui, -apple-system, sans-serif",
               fontSize: 'clamp(1.6rem, 2.8vw, 2.25rem)',
               fontWeight: 700,
               letterSpacing: '-.03em',

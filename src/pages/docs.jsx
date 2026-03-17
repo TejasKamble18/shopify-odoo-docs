@@ -43,7 +43,7 @@ export default function DocsLanding() {
     const s = document.createElement('style');
     s.id = id;
     s.textContent = `
-      @import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
       .sdlc-docs-root * { font-family: 'Inter', system-ui, -apple-system, sans-serif !important; box-sizing: border-box; }
       .sdlc-docs-root code { font-family: 'JetBrains Mono', 'Fira Code', monospace !important; }
       @keyframes docsPagePulse { 0%,100%{box-shadow:0 0 0 0 rgba(16,185,129,.5)} 50%{box-shadow:0 0 0 4px rgba(16,185,129,0)} }
@@ -75,7 +75,7 @@ export default function DocsLanding() {
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '4px 14px', background: 'rgba(99,102,241,.1)', border: '1px solid rgba(99,102,241,.22)', borderRadius: 20, marginBottom: 22, fontSize: '.68rem', fontWeight: 700, color: '#818cf8', letterSpacing: '.07em', textTransform: 'uppercase' }}>
               📖 Documentation
             </div>
-            <h1 style={{ fontSize: 'clamp(2rem, 4.5vw, 3.2rem)', fontWeight: 800, letterSpacing: '-.04em', color: '#fff', lineHeight: 1.1, marginBottom: 16 }}>
+            <h1 style={{ fontSize: 'clamp(2rem, 4.5vw, 3.2rem)', fontWeight: 700, letterSpacing: '-.04em', color: '#fff', lineHeight: 1.1, marginBottom: 16 }}>
               All product documentation
             </h1>
             <p style={{ fontSize: '1rem', color: 'rgba(255,255,255,.42)', lineHeight: 1.7, marginBottom: 32 }}>
@@ -114,7 +114,7 @@ export default function DocsLanding() {
               <div key={group.label} style={{ marginBottom: 64 }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 24, paddingBottom: 16, borderBottom: '1px solid rgba(255,255,255,.05)' }}>
                   <div style={{ width: 8, height: 8, borderRadius: '50%', background: group.accent, boxShadow: `0 0 10px ${group.accent}80` }} />
-                  <h2 style={{ fontSize: '1rem', fontWeight: 800, color: '#fff', margin: 0 }}>{group.label}</h2>
+                  <h2 style={{ fontSize: '1rem', fontWeight: 700, color: '#fff', margin: 0 }}>{group.label}</h2>
                   <span style={{ padding: '2px 9px', background: `${group.accent}12`, border: `1px solid ${group.accent}22`, borderRadius: 10, fontSize: '.62rem', fontWeight: 700, color: group.accent }}>
                     {group.items.length} products
                   </span>
@@ -189,7 +189,7 @@ function ProductCard({ p, accent }) {
             {p.icon}
           </div>
           <div>
-            <h3 style={{ fontSize: '.95rem', fontWeight: 800, color: '#fff', margin: 0, marginBottom: 3 }}>{p.name}</h3>
+            <h3 style={{ fontSize: '.95rem', fontWeight: 700, color: '#fff', margin: 0, marginBottom: 3 }}>{p.name}</h3>
             <div style={{ display: 'flex', gap: 6, alignItems: 'center' }}>
               {live ? <LiveBadge /> : (
                 <span style={{ padding: '2px 8px', background: 'rgba(255,255,255,.04)', border: '1px solid rgba(255,255,255,.08)', borderRadius: 10, fontSize: '.6rem', fontWeight: 600, color: 'rgba(255,255,255,.32)' }}>
@@ -228,7 +228,7 @@ function ProductCard({ p, accent }) {
       {/* Doc sections — FIXED: link to actual known doc routes, not fragile slug construction */}
       {live && docsUrl && (
         <div>
-          <div style={{ fontSize: '.58rem', fontWeight: 800, letterSpacing: '.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,.2)', marginBottom: 8 }}>Sections</div>
+          <div style={{ fontSize: '.58rem', fontWeight: 700, letterSpacing: '.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,.2)', marginBottom: 8 }}>Sections</div>
           <div style={{ display: 'flex', gap: 5, flexWrap: 'wrap' }}>
             {p.sections.map((sec, i) => (
               <Link

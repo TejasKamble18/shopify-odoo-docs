@@ -15,7 +15,7 @@ function injectNavStyles() {
     const link = document.createElement('link');
     link.id = FONT_LINK_ID;
     link.rel = 'stylesheet';
-    link.href = 'https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap';
+    href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap',
     document.head.appendChild(link);
   }
   const s = document.createElement('style');
@@ -63,7 +63,7 @@ function Logo() {
           e.target.style.display = 'none';
           const sp = document.createElement('span');
           sp.textContent = 'SDLC Corp';
-          sp.style.cssText = 'font-weight:800;font-size:.9rem;color:#fff;letter-spacing:-.02em';
+          sp.style.cssText = 'font-weight:700;font-size:.9rem;color:#fff;letter-spacing:-.02em';
           e.target.parentNode.appendChild(sp);
         }}
       />
@@ -101,7 +101,7 @@ function DocsDropdown({ open, onClose }) {
 
       {DOCS_GROUPS.map((group, gi) => (
         <div key={group.group} style={{ marginBottom: gi < DOCS_GROUPS.length - 1 ? 14 : 0 }}>
-          <div style={{ fontSize: '.6rem', fontWeight: 800, letterSpacing: '.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,.22)', marginBottom: 8, paddingLeft: 2 }}>
+          <div style={{ fontSize: '.6rem', fontWeight: 700, letterSpacing: '.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,.22)', marginBottom: 8, paddingLeft: 2 }}>
             {group.group}
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 4 }}>

@@ -532,7 +532,7 @@ h3 {
 
 .section-title {
   font-size: 2.5rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.03em;
   margin-bottom: 12px;
   color: var(--ink);
@@ -708,7 +708,7 @@ h3 {
 
 .cta-box h2 {
   font-size: 2.2rem;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 16px;
 }
 
@@ -757,7 +757,7 @@ h3 {
 
 .page-header h1 {
   font-size: 2.5rem;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 12px;
   color: var(--ink);
 }
@@ -929,7 +929,7 @@ h3 {
 
 .product-hero-text h1 {
   font-size: 2.8rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.04em;
   line-height: 1.15;
   margin-bottom: 16px;
@@ -1005,7 +1005,7 @@ h3 {
 
 .stat-value {
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 700;
   color: #fff;
 }
 
@@ -1127,7 +1127,7 @@ h3 {
   border-radius: 50%;
   background: var(--blue);
   color: #fff;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 1.25rem;
   margin: 0 auto 16px;
 }
@@ -1873,7 +1873,7 @@ h3 {
 
 .page-title {
   font-size: 1.95rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -.04em;
   line-height: 1.15;
   color: var(--ink);
@@ -2682,7 +2682,7 @@ h3 {
 
 .cta-heading {
   font-size: 2.1rem;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .cta-sub {
@@ -2838,7 +2838,7 @@ h3 {
 
 .section-heading {
   font-size: 2rem;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--ink);
 }
 
@@ -3047,7 +3047,7 @@ h3 {
 
 /* Simple legacy layout helpers at bottom */
 .documentation {
-  max-width: 800px;
+  max-width: 700px;
   margin: auto;
   padding: 20px;
 }

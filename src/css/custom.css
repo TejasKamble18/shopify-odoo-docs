@@ -21,8 +21,8 @@
   --sdlc-text-muted:   rgba(232, 224, 236, 0.5);
 
   /* ── Font families ── */
-  --font-body:    'Inter', system-ui, -apple-system, sans-serif;
-  --font-display: 'Syne', sans-serif;
+  --font-display: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Inter', system-ui, -apple-system, sans-serif;
   --font-mono:    'JetBrains Mono', 'Fira Code', monospace;
 
   /* ── Type scale ── */
